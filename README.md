@@ -99,8 +99,4 @@ I enjoy taking an idea from its first requirements through implementation, itera
   </a>
 </p>
 
-<p align="center">
-  <a href="https://BAIXARCV" target="_blank">
-    <img src="https://img.shields.io/badge/Explore%20my%20work-Visit%20portfolio-D7B56D?style=flat-square&labelColor=0B1728" alt="Download CV" />
-  </a>
-</p>
+
