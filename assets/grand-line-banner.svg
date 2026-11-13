@@ -40,7 +40,7 @@
     <path d="M1124 35V301M991 168H1257M1030 74L1218 262M1218 74L1030 262" stroke-width="1"/>
     <path d="M1124 52L1133 158L1124 147L1115 158Z" fill="#D7B56D" stroke="none" opacity=".7"/>
   </g>
-  <g fill="#D7B56D" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" opacity=".62">
+  <g fill="#D7B56D" font-family="Poppins, Inter, Arial, sans-serif" font-size="10" letter-spacing="2" opacity=".62">
     <text x="1124" y="25" text-anchor="middle">N</text>
     <text x="1271" y="171">E</text>
     <text x="1124" y="321" text-anchor="middle">S</text>
@@ -56,15 +56,15 @@
   </g>
   <path d="M928 279 C1000 269 1090 289 1171 277 S1300 270 1400 280" fill="none" stroke="#D7B56D" stroke-opacity=".32" stroke-width="1.4"/>
 
-  <g font-family="Arial, Helvetica, sans-serif">
-    <text x="84" y="78" fill="#D7B56D" font-size="12" font-weight="600" letter-spacing="4">FIELD NOTES  /  01</text>
-    <text x="80" y="160" fill="#F3F0E8" font-size="61" font-weight="700" letter-spacing="-1.8">LEANDRO MALUNGO</text>
+  <g font-family="Poppins, Inter, Arial, sans-serif">
+    <text x="84" y="78" fill="#D7B56D" font-size="11" font-weight="400" letter-spacing="4.2">FIELD NOTES  /  01</text>
+    <text x="80" y="160" fill="#F3F0E8" font-size="56" font-weight="300" letter-spacing="0.2">LEANDRO MALUNGO</text>
     <rect x="84" y="188" width="54" height="3" fill="#D7B56D"/>
-    <text x="84" y="228" fill="#DCE5EC" font-size="17" font-weight="500" letter-spacing="3.2">SOFTWARE DEVELOPER</text>
+    <text x="84" y="228" fill="#DCE5EC" font-size="16" font-weight="300" letter-spacing="3.6">SOFTWARE DEVELOPER</text>
     <text x="84" y="260" fill="#A9BAC9" font-size="13" letter-spacing="2.2">BUILDING DIGITAL PRODUCTS · ANGOLA</text>
   </g>
 
   <path d="M84 316H1316" stroke="#D7B56D" stroke-opacity=".22" stroke-width="1"/>
-  <text x="84" y="338" fill="#8FA3B5" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2.4">THE GRAND LINE — A JOURNEY OF CURIOSITY, CRAFT AND CODE</text>
-  <text x="1316" y="338" fill="#8FA3B5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" letter-spacing="2">LUANDA · AO</text>
+  <text x="84" y="338" fill="#8FA3B5" font-family="Poppins, Inter, Arial, sans-serif" font-size="9" letter-spacing="2.4">THE GRAND LINE — A JOURNEY OF CURIOSITY, CRAFT AND CODE</text>
+  <text x="1316" y="338" fill="#8FA3B5" font-family="Poppins, Inter, Arial, sans-serif" font-size="9" text-anchor="end" letter-spacing="2">LUANDA · AO</text>
 </svg>
