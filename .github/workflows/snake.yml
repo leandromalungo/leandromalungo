@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate profile visuals
 
 on:
   schedule:
@@ -12,14 +12,63 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate contribution graph snake
+      - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
-      - name: Publish snake animation
+            dist/snake.svg?color_snake=%23D7B56D&color_dots=%230B1728,%231B344B,%233C6078,%237D9AA8,%23D7B56D
+            dist/snake-dark.svg?color_snake=%23E6C77D&color_dots=%230B1728,%231B344B,%233C6078,%237D9AA8,%23D7B56D
+
+      - name: Generate GitHub activity card
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const username = context.repo.owner;
+            const query = `
+              query($login: String!) {
+                user(login: $login) {
+                  followers { totalCount }
+                  repositories(privacy: PUBLIC, ownerAffiliations: OWNER) { totalCount }
+                  contributionsCollection {
+                    contributionCalendar { totalContributions }
+                  }
+                }
+              }
+            `;
+            const data = await github.graphql(query, { login: username });
+            const user = data.user;
+            const repos = await github.paginate(github.rest.repos.listForUser, {
+              username,
+              per_page: 100,
+              type: "owner"
+            });
+            const stars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+            const values = [
+              [user.contributionsCollection.contributionCalendar.totalContributions.toLocaleString("en-US"), "CONTRIBUTIONS"],
+              [user.repositories.totalCount.toLocaleString("en-US"), "PUBLIC REPOSITORIES"],
+              [user.followers.totalCount.toLocaleString("en-US"), "FOLLOWERS"],
+              [stars.toLocaleString("en-US"), "STARS EARNED"]
+            ];
+            const cards = values.map(([value, label], i) => {
+              const x = 28 + i * 242;
+              return `
+                <g transform="translate(${x} 24)">
+                  <text x="0" y="19" fill="#D7B56D" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">${label}</text>
+                  <text x="0" y="76" fill="#F3F0E8" font-family="Arial, sans-serif" font-size="42" font-weight="600">${value}</text>
+                  <path d="M0 96H188" stroke="#8CA5B8" stroke-opacity=".24"/>
+                </g>`;
+            }).join("");
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img" aria-label="GitHub profile activity">
+              <rect width="1000" height="150" rx="12" fill="#0B1728"/>
+              <path d="M0 1H1000" stroke="#D7B56D" stroke-opacity=".55"/>
+              ${cards}
+            </svg>`;
+            const fs = require("fs");
+            fs.mkdirSync("dist", { recursive: true });
+            fs.writeFileSync("dist/activity.svg", svg);
+
+      - name: Publish profile visuals
         uses: peaceiris/actions-gh-pages@v4
         with:
           publish_branch: output
