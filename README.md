@@ -57,12 +57,10 @@ I enjoy taking an idea from its first requirements through implementation, itera
 ## GitHub activity
 
 <div align="center">
-  <a href="https://github.com/leandromalungo">
-    <img height="165" src="https://github-readme-stats.vercel.app/api?username=leandromalungo&show_icons=true&hide_border=true&rank_icon=github&bg_color=0B1728&title_color=D7B56D&text_color=DCE5EC&icon_color=8CA5B8" alt="GitHub contribution and repository statistics" />
-  </a>
-  <a href="https://github.com/leandromalungo">
-    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leandromalungo&layout=compact&hide_border=true&bg_color=0B1728&title_color=D7B56D&text_color=DCE5EC" alt="Most used programming languages" />
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/leandromalungo/leandromalungo/output/activity.svg" />
+    <img src="https://raw.githubusercontent.com/leandromalungo/leandromalungo/output/activity.svg" alt="GitHub profile overview: contributions, public repositories, followers and stars" width="100%" />
+  </picture>
 </div>
 
 ## Contribution trail
