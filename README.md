@@ -13,21 +13,30 @@ I'm **Leandro Malungo**, a software developer based in Angola. My work centres o
 
 I enjoy taking an idea from its first requirements through implementation, iteration and delivery. I am particularly interested in technology that solves concrete problems and creates opportunities.
 
-## Areas of work
+## What I build
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <strong>01 · Product development</strong><br/><br/>
-      Web applications, mobile experiences, user interfaces and end-to-end product implementation.
+      <p align="center">
+        <img src="https://img.shields.io/badge/01-Product%20Engineering-D7B56D?style=flat-square&labelColor=0B1728" alt="01 Product engineering" />
+      </p>
+      <h3 align="center">Digital products</h3>
+      <p align="center">I turn ideas and real-world needs into useful web and mobile experiences — from interface design and frontend architecture to complete product delivery.</p>
     </td>
     <td width="33%" valign="top">
-      <strong>02 · Backend &amp; systems</strong><br/><br/>
-      APIs, databases, integrations, automation and reliable application architecture.
+      <p align="center">
+        <img src="https://img.shields.io/badge/02-Backend%20%26%20Systems-8FA3B5?style=flat-square&labelColor=0B1728" alt="02 Backend and systems" />
+      </p>
+      <h3 align="center">Backend &amp; infrastructure</h3>
+      <p align="center">I build APIs, data-driven services and integrations, connecting databases, automation and application logic into maintainable systems.</p>
     </td>
     <td width="33%" valign="top">
-      <strong>03 · Emerging technology</strong><br/><br/>
-      Applied AI, data workflows and practical experiments with new technologies.
+      <p align="center">
+        <img src="https://img.shields.io/badge/03-Applied%20Innovation-D7B56D?style=flat-square&labelColor=0B1728" alt="03 Applied innovation" />
+      </p>
+      <h3 align="center">AI &amp; emerging technology</h3>
+      <p align="center">I explore applied AI, data and emerging technologies to develop practical solutions, test new approaches and turn complex challenges into opportunities.</p>
     </td>
   </tr>
 </table>
@@ -59,12 +68,26 @@ I enjoy taking an idea from its first requirements through implementation, itera
 
 ## Connect
 
-<div align="center">
-  <a href="https://www.linkedin.com/in/leandro-malungo/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-20364D?style=flat-square&logo=linkedin&logoColor=white&labelColor=0B1728" alt="Connect on LinkedIn" />
+<p align="center">
+  <a href="https://www.linkedin.com/in/leandro-malungo/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://github.com/leandromalungo">
-    <img src="https://img.shields.io/badge/GitHub-Follow-20364D?style=flat-square&logo=github&logoColor=white&labelColor=0B1728" alt="Follow on GitHub" />
+  <a href="https://www.instagram.com/leandro_malungo/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-  <p><sub>Made in Luanda, Angola · Exploring the next horizon.</sub></p>
-</div>
+  <a href="https://www.facebook.com/leandro.malungo.dev" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-0866FF?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>
+  <a href="mailto:lmalungo@outlook.com">
+    <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://leandromalungo.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-0B1728?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://leandromalungo.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Explore%20my%20work-Visit%20portfolio-D7B56D?style=flat-square&labelColor=0B1728" alt="Explore my portfolio" />
+  </a>
+</p>
