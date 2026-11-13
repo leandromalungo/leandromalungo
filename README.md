@@ -2,23 +2,7 @@
 
 <div align="center">
   <img src="./assets/grand-line-banner.svg" width="100%" alt="Leandro Malungo — Software Developer" />
-  <br/>
 
-  <p>
-    <strong>Software Developer</strong> &nbsp;·&nbsp; Technology &amp; Innovation
-  </p>
-  <p>
-    I design and build digital products that turn practical problems into useful technology.
-  </p>
-  <p>
-    <a href="https://github.com/leandromalungo?tab=followers">
-      <img src="https://img.shields.io/github/followers/leandromalungo?label=Followers&style=flat-square&color=20364D&labelColor=0B1728" alt="GitHub followers" />
-    </a>
-    <a href="https://komarev.com/ghpvc/?username=leandromalungo">
-      <img src="https://komarev.com/ghpvc/?username=leandromalungo&style=flat-square&color=D7B56D&label=Profile%20views" alt="Profile views" />
-    </a>
-    <img src="https://img.shields.io/badge/Based%20in-Angola-20364D?style=flat-square&labelColor=0B1728" alt="Based in Angola" />
-  </p>
 </div>
 
 ---
