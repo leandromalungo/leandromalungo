@@ -50,21 +50,9 @@ I enjoy taking an idea from its first requirements through implementation, itera
 
 ## Technology
 
-<p><strong>Languages</strong><br/>
-  <img src="https://img.shields.io/badge/TypeScript-172B3A?style=flat-square&logo=typescript&logoColor=8CC5F5" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/JavaScript-172B3A?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/Python-172B3A?style=flat-square&logo=python&logoColor=FFE08A" alt="Python"/>
-</p>
-<p><strong>Application development</strong><br/>
-  <img src="https://img.shields.io/badge/React-172B3A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/Next.js-172B3A?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/Node.js-172B3A?style=flat-square&logo=nodedotjs&logoColor=83CD29" alt="Node.js"/>
-</p>
-<p><strong>Data &amp; tools</strong><br/>
-  <img src="https://img.shields.io/badge/PostgreSQL-172B3A?style=flat-square&logo=postgresql&logoColor=9CC3E6" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/Docker-172B3A?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Git-172B3A?style=flat-square&logo=git&logoColor=F05032" alt="Git"/>
-</p>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,py,react,nextjs,nodejs,postgres,docker,git&theme=dark&perline=5" alt="TypeScript, JavaScript, Python, React, Next.js, Node.js, PostgreSQL, Docker and Git" />
+</div>
 
 ## GitHub activity
 
