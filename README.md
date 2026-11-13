@@ -47,15 +47,6 @@ I enjoy taking an idea from its first requirements through implementation, itera
   <img src="https://skillicons.dev/icons?i=ts,js,py,react,nextjs,nodejs,postgres,docker,git&theme=dark&perline=5" alt="TypeScript, JavaScript, Python, React, Next.js, Node.js, PostgreSQL, Docker and Git" />
 </div>
 
-## GitHub activity
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/leandromalungo/leandromalungo/output/activity.svg" />
-    <img src="https://raw.githubusercontent.com/leandromalungo/leandromalungo/output/activity.svg" alt="GitHub profile overview: contributions, public repositories, followers and stars" width="100%" />
-  </picture>
-</div>
-
 ## Contribution trail
 
 <div align="center">
