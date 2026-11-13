@@ -1,16 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
-<defs>
- <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b36"/><stop offset=".55" stop-color="#102f52"/><stop offset="1" stop-color="#071323"/></linearGradient>
- <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd166"/><stop offset="1" stop-color="#f26b38"/></linearGradient>
- <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#8bc5e8" stroke-opacity=".08"/></pattern>
-</defs>
-<rect width="1200" height="300" fill="url(#sea)"/><rect width="1200" height="300" fill="url(#grid)"/>
-<circle cx="1000" cy="90" r="58" fill="url(#sun)" opacity=".95"/>
-<path d="M0 205 Q130 175 260 207 T520 205 T780 207 T1040 205 T1300 207 V300 H0Z" fill="#0b2744"/>
-<path d="M0 238 Q150 210 300 240 T600 238 T900 240 T1200 238" fill="none" stroke="#55b9d6" stroke-width="3" opacity=".55"/>
-<g transform="translate(820 135)" fill="#07111f" stroke="#07111f" stroke-linejoin="round"><path d="M-80 65 Q0 82 110 65 L85 95 H-55Z"/><path d="M0 60V-88 M0 -82L-55 42H0Z M8 -70L75 35H8Z" /><path d="M-62 47L-5 47L-25 59Z"/></g>
-<text x="70" y="112" fill="#f6f1e7" font-family="Verdana,Arial,sans-serif" font-size="22" letter-spacing="7">THE GRAND LINE OF CODE</text>
-<text x="66" y="178" fill="#ffffff" font-family="Verdana,Arial,sans-serif" font-size="58" font-weight="700">LEANDRO MALUNGO</text>
-<text x="72" y="220" fill="#f6c85f" font-family="Verdana,Arial,sans-serif" font-size="19" letter-spacing="4">SOFTWARE DEVELOPER · BUILDER · EXPLORER</text>
-<path d="M70 242H560" stroke="#e85d4a" stroke-width="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360" role="img" aria-labelledby="title desc">
+  <title id="title">Leandro Malungo — Software Developer</title>
+  <desc id="desc">A refined nautical-inspired banner with a deep navy sea, navigation lines, a compass and a ship silhouette.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1728"/>
+      <stop offset="0.58" stop-color="#10243A"/>
+      <stop offset="1" stop-color="#07111E"/>
+    </linearGradient>
+    <linearGradient id="horizon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D7B56D" stop-opacity="0"/>
+      <stop offset="0.52" stop-color="#D7B56D" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#D7B56D" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="45%" r="48%">
+      <stop offset="0" stop-color="#31516A" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#10243A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="coordinates" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#B9C8D6" stroke-opacity=".055" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.5" fill="#D7B56D" fill-opacity=".22"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="360" fill="url(#background)"/>
+  <rect width="1400" height="360" fill="url(#glow)"/>
+  <rect width="1400" height="360" fill="url(#coordinates)"/>
+
+  <path d="M0 276 C230 251 390 291 610 269 S1000 252 1400 275" fill="none" stroke="#8CA5B8" stroke-opacity=".14" stroke-width="1.2"/>
+  <path d="M0 294 C250 272 430 310 675 286 S1090 274 1400 296" fill="none" stroke="#8CA5B8" stroke-opacity=".10" stroke-width="1"/>
+  <path d="M690 82H1330" stroke="url(#horizon)" stroke-width="1"/>
+
+  <g opacity=".20" stroke="#D7B56D" fill="none">
+    <circle cx="1124" cy="168" r="118" stroke-width="1"/>
+    <circle cx="1124" cy="168" r="94" stroke-width="1"/>
+    <circle cx="1124" cy="168" r="4" fill="#D7B56D" stroke="none"/>
+    <path d="M1124 35V301M991 168H1257M1030 74L1218 262M1218 74L1030 262" stroke-width="1"/>
+    <path d="M1124 52L1133 158L1124 147L1115 158Z" fill="#D7B56D" stroke="none" opacity=".7"/>
+  </g>
+  <g fill="#D7B56D" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2" opacity=".62">
+    <text x="1124" y="25" text-anchor="middle">N</text>
+    <text x="1271" y="171">E</text>
+    <text x="1124" y="321" text-anchor="middle">S</text>
+    <text x="976" y="171" text-anchor="end">W</text>
+  </g>
+
+  <g transform="translate(1050 210)" fill="#050D17" opacity=".92">
+    <path d="M-102 39 C-48 51 37 51 119 34 L93 61 L-72 61Z"/>
+    <path d="M-10 35V-91" stroke="#050D17" stroke-width="5"/>
+    <path d="M-5 -84L-72 27H-5Z"/>
+    <path d="M3 -72L75 25H3Z"/>
+    <path d="M-78 29L-17 29L-42 39Z"/>
+  </g>
+  <path d="M928 279 C1000 269 1090 289 1171 277 S1300 270 1400 280" fill="none" stroke="#D7B56D" stroke-opacity=".32" stroke-width="1.4"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="84" y="78" fill="#D7B56D" font-size="12" font-weight="600" letter-spacing="4">FIELD NOTES  /  01</text>
+    <text x="80" y="160" fill="#F3F0E8" font-size="61" font-weight="700" letter-spacing="-1.8">LEANDRO MALUNGO</text>
+    <rect x="84" y="188" width="54" height="3" fill="#D7B56D"/>
+    <text x="84" y="228" fill="#DCE5EC" font-size="17" font-weight="500" letter-spacing="3.2">SOFTWARE DEVELOPER</text>
+    <text x="84" y="260" fill="#A9BAC9" font-size="13" letter-spacing="2.2">BUILDING DIGITAL PRODUCTS · ANGOLA</text>
+  </g>
+
+  <path d="M84 316H1316" stroke="#D7B56D" stroke-opacity=".22" stroke-width="1"/>
+  <text x="84" y="338" fill="#8FA3B5" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2.4">THE GRAND LINE — A JOURNEY OF CURIOSITY, CRAFT AND CODE</text>
+  <text x="1316" y="338" fill="#8FA3B5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" letter-spacing="2">LUANDA · AO</text>
 </svg>
