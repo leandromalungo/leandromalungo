@@ -9,7 +9,7 @@
 
 ## Profile
 
-I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work centres on building web and mobile applications, backend services and automation — with a growing interest in applied AI and data-driven products.
+I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work centres on building web and mobile applications, backend services and automation, with a growing interest in applied AI and data-driven products.
 
 I enjoy taking an idea from its first requirements through implementation, iteration and delivery. I am particularly interested in technology that solves concrete problems and creates opportunities.
 
