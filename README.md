@@ -42,38 +42,9 @@ I enjoy taking an idea from its first requirements through implementation, itera
 
 ## Developer Terminal
 
-<table>
-  <tr>
-    <td width="68%" valign="middle">
-      <p><sub><b>LEANDRO@DEV</b> · PROFILE CONSOLE · READ ONLY</sub></p>
-      <pre><code>$ whoami
-Leandro Malungo
-Software Developer · Luanda, Angola
-
-$ focus --current
-Digital products
-Backend &amp; systems
-Applied AI · Data · Automation
-
-$ build --approach
-Understand the problem
-Design and develop
-Test, improve and deliver
-
-$ help
-projects   Explore my repositories
-stack      See technologies below
-contact    Find me in the links at the end
-
-$ _</code></pre>
-    </td>
-    <td width="32%" align="center" valign="middle">
-      <img src="./assets/pixel-developer.svg" width="180" alt="Pixel art developer character" />
-      <br />
-      <sub>PLAYER 01 · DEVELOPER MODE</sub>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/developer-terminal.svg" width="100%" alt="Leandro Malungo — Developer Workspace" />
+</div>
 
 ## Mission Log
 
@@ -101,19 +72,6 @@ $ _</code></pre>
     </td>
   </tr>
 </table>
-
-## Developer Stats
-
-<p align="center"><sub>A snapshot of my public GitHub activity. Stats may take a little while to refresh.</sub></p>
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=leandromalungo&show_icons=true&hide_border=true&bg_color=0B1728&title_color=D7B56D&text_color=CBD5E1&icon_color=8FA3B5&rank_icon=github" alt="Leandro's GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leandromalungo&layout=compact&hide_border=true&bg_color=0B1728&title_color=D7B56D&text_color=CBD5E1" alt="Most used programming languages" />
-</div>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=leandromalungo&hide_border=true&background=0B1728&ring=D7B56D&fire=D7B56D&currStreakLabel=D7B56D&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8FA3B5" alt="GitHub contribution streak" />
-</p>
 
 ## Technologies &amp; Tools
 
