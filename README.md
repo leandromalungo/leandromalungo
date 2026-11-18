@@ -40,6 +40,81 @@ I enjoy taking an idea from its first requirements through implementation, itera
   </tr>
 </table>
 
+## Developer Terminal
+
+<table>
+  <tr>
+    <td width="68%" valign="middle">
+      <p><sub><b>LEANDRO@DEV</b> · PROFILE CONSOLE · READ ONLY</sub></p>
+      <pre><code>$ whoami
+Leandro Malungo
+Software Developer · Luanda, Angola
+
+$ focus --current
+Digital products
+Backend &amp; systems
+Applied AI · Data · Automation
+
+$ build --approach
+Understand the problem
+Design and develop
+Test, improve and deliver
+
+$ help
+projects   Explore my repositories
+stack      See technologies below
+contact    Find me in the links at the end
+
+$ _</code></pre>
+    </td>
+    <td width="32%" align="center" valign="middle">
+      <img src="./assets/pixel-developer.svg" width="180" alt="Pixel art developer character" />
+      <br />
+      <sub>PLAYER 01 · DEVELOPER MODE</sub>
+    </td>
+  </tr>
+</table>
+
+## Mission Log
+
+<p><sub>THE JOURNEY IS IN PROGRESS — these are the areas I'm actively building towards.</sub></p>
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <p align="center"><img src="https://img.shields.io/badge/MISSION_01-BUILD-D7B56D?style=flat-square&labelColor=0B1728" alt="Mission 01 Build" /></p>
+      <h3 align="center">Useful products</h3>
+      <p align="center">Turn real needs and promising ideas into reliable digital products that people can use.</p>
+      <p align="center"><sub>STATUS: ONGOING</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <p align="center"><img src="https://img.shields.io/badge/MISSION_02-EXPLORE-8FA3B5?style=flat-square&labelColor=0B1728" alt="Mission 02 Explore" /></p>
+      <h3 align="center">Emerging technology</h3>
+      <p align="center">Explore applied AI, data and new technologies, focusing on practical use rather than hype.</p>
+      <p align="center"><sub>STATUS: ONGOING</sub></p>
+    </td>
+    <td width="33%" valign="top">
+      <p align="center"><img src="https://img.shields.io/badge/MISSION_03-CONTRIBUTE-D7B56D?style=flat-square&labelColor=0B1728" alt="Mission 03 Contribute" /></p>
+      <h3 align="center">Learn &amp; contribute</h3>
+      <p align="center">Keep learning, collaborate with others and contribute to projects and the developer community.</p>
+      <p align="center"><sub>STATUS: ONGOING</sub></p>
+    </td>
+  </tr>
+</table>
+
+## Developer Stats
+
+<p align="center"><sub>A snapshot of my public GitHub activity. Stats may take a little while to refresh.</sub></p>
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=leandromalungo&show_icons=true&hide_border=true&bg_color=0B1728&title_color=D7B56D&text_color=CBD5E1&icon_color=8FA3B5&rank_icon=github" alt="Leandro's GitHub statistics" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leandromalungo&layout=compact&hide_border=true&bg_color=0B1728&title_color=D7B56D&text_color=CBD5E1" alt="Most used programming languages" />
+</div>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=leandromalungo&hide_border=true&background=0B1728&ring=D7B56D&fire=D7B56D&currStreakLabel=D7B56D&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8FA3B5" alt="GitHub contribution streak" />
+</p>
+
 ## Technologies &amp; Tools
 
 <p align="center"><sub>A broad toolkit across modern software development, from interfaces and APIs to data, cloud and delivery.</sub></p>
