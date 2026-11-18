@@ -40,6 +40,12 @@ I enjoy taking an idea from its first requirements through implementation, itera
   </tr>
 </table>
 
+## Pixel Avatar
+
+<div align="center">
+  <img src="./assets/leandro-minecraft-developer.gif" width="320" alt="Leandro Malungo — Minecraft-style animated developer avatar" />
+</div>
+
 ## Developer Terminal
 
 <div align="center">
