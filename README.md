@@ -1,8 +1,7 @@
 <!-- GitHub Profile README — Leandro Malungo -->
 
 <div align="center">
-  <img src="./assets/grand-line-banner.svg" width="100%" alt="Leandro Malungo — Software Developer" />
-
+  <img src="./game.gif" width="100%" alt="GitHub Space Shooter — Leandro Malungo" />
 </div>
 
 ---
@@ -69,14 +68,10 @@ I enjoy taking an idea from its first requirements through implementation, itera
   <img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,terraform,postman,figma,vscode&theme=dark&perline=6" alt="Git, GitHub, GitHub Actions, GitLab, Terraform, Postman, Figma and Visual Studio Code" />
 </div>
 
-## Contribution trail
+## A little more
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/leandromalungo/leandromalungo/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/leandromalungo/leandromalungo/output/snake.svg" />
-    <img src="https://raw.githubusercontent.com/leandromalungo/leandromalungo/output/snake.svg" alt="Animated snake travelling through my GitHub contribution graph" width="100%" />
-  </picture>
+  <img src="./assets/grand-line-banner.svg" width="100%" alt="Leandro Malungo — Software Developer" />
 </div>
 
 ## Connect
@@ -98,5 +93,3 @@ I enjoy taking an idea from its first requirements through implementation, itera
     <img src="https://img.shields.io/badge/Portfolio-0B1728?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
 </p>
-
-
