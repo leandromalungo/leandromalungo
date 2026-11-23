@@ -15,6 +15,16 @@ export const NAV_LINKS = [
 	{ label: 'Contact', href: '#contact' },
 ] as const;
 
+export const PARTNER_LOGOS = [
+	{ name: 'ANGOTIC', src: '/logos/angotic.png' },
+	{ name: 'Zanecom', src: '/logos/zanecom.png' },
+	{ name: 'AGRI IA', src: '/logos/agri-ia.png' },
+	{ name: 'ecoangola', src: '/logos/ecoangola.png' },
+	{ name: 'SpaceWeek', src: '/logos/spaceweek.png' },
+	{ name: 'Podnerd', src: '/logos/podnerd.png' },
+	{ name: 'JOGOS 80', src: '/logos/jogos80.png' },
+] as const;
+
 export const BRAND_SHOWCASE_ITEMS: ShowcaseItem[] = [
 	{
 		id: 'brand-poster',

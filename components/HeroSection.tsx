@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react';
 import { ArrowRight, Check } from 'lucide-react';
+import { PARTNER_LOGOS } from '@/lib/portfolio-data';
 import { scrollToSection } from './Navbar';
 
 interface HeroSectionProps {
@@ -273,37 +274,32 @@ export default function HeroSection({
 				</p>
 			</div>
 
-			{/* Full-Width Monochrome Partners / Milestones Logo Strip */}
-			<div className="bg-white border-y border-black/[0.06] py-6">
-				<div className="max-w-[1200px] mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-6 items-center justify-items-center text-[#141414]">
-					<span className="text-[15px] font-bold tracking-tight">
-						&amp;ANGOTIC
-					</span>
-					<span className="text-[15px] font-bold tracking-tight flex items-center gap-1.5">
-						<span className="w-3.5 h-3.5 rounded-xs bg-[#141414] inline-block" />
-						Zanecom
-					</span>
-					<span className="text-[17px] font-extrabold tracking-tight">
-						AGRI IA
-					</span>
-					<span className="text-[15px] font-semibold tracking-tight flex items-center gap-1.5">
-						<span className="w-4 h-4 rounded-full border-2 border-[#141414] inline-block" />
-						ecoangola
-					</span>
-					<span className="text-[14px] font-bold tracking-tight flex items-center gap-1">
-						<span className="text-[16px]">⚡</span> SpaceWeek
-					</span>
-					<span className="text-[15px] font-bold tracking-tight flex items-center gap-1.5">
-						<span className="w-4 h-4 rounded-sm bg-[#141414] text-white text-[10px] font-bold inline-flex items-center justify-center">
-							P
-						</span>
-						Podnerd
-					</span>
-					<span className="text-[11px] font-bold tracking-wider uppercase leading-tight text-center">
-						JOGOS 80
-						<br />
-						<span className="font-medium tracking-widest">MAGAZINE</span>
-					</span>
+			{/* Full-Width Animated Black & White PNG Logo Wheel */}
+			<div className="bg-white border-y border-black/[0.06] py-5 overflow-hidden">
+				<div className="max-w-[1240px] mx-auto px-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+					<div className="flex w-max items-center animate-logo-marquee hover:[animation-play-state:paused]">
+						{[0, 1].map((dupIndex) => (
+							<div
+								key={dupIndex}
+								aria-hidden={dupIndex === 1}
+								className="flex items-center gap-12 sm:gap-16 pr-12 sm:pr-16 shrink-0"
+							>
+								{PARTNER_LOGOS.map((logo) => (
+									<div
+										key={`${dupIndex}-${logo.name}`}
+										className="flex items-center justify-center shrink-0"
+									>
+										<img
+											src={logo.src}
+											alt={dupIndex === 0 ? logo.name : ''}
+											referrerPolicy="no-referrer"
+											className="h-8 sm:h-9 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition-opacity select-none"
+										/>
+									</div>
+								))}
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</section>

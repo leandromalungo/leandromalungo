@@ -35,8 +35,24 @@ h4 {
 	font-family: var(--font-sans);
 }
 
+@keyframes logo-marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+.animate-logo-marquee {
+	animation: logo-marquee 26s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
+	}
+	.animate-logo-marquee {
+		animation: none;
 	}
 }
