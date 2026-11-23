@@ -50,6 +50,15 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 		};
 	}, []);
 
+	useEffect(() => {
+		if (!mobileOpen) return;
+		const onKey = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') setMobileOpen(false);
+		};
+		window.addEventListener('keydown', onKey);
+		return () => window.removeEventListener('keydown', onKey);
+	}, [mobileOpen]);
+
 	const handleAnchorClick = (
 		e: React.MouseEvent<HTMLAnchorElement>,
 		href: string
@@ -61,17 +70,17 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 	};
 
 	return (
-		<header className="sticky top-0 z-40 w-full bg-[#F7F7F5]/90 backdrop-blur-md border-b border-black/[0.06]">
-			<div className="max-w-[1240px] mx-auto px-6 h-16 flex items-center justify-between gap-8">
+		<header className="sticky top-0 z-40 w-full bg-[#F7F7F5]/92 backdrop-blur-md border-b border-black/[0.06]">
+			<div className="max-w-[1240px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 lg:gap-8">
 				{/* Zone 1: Brand Wordmark */}
 				<a
 					href="#hero"
 					onClick={(e) => handleAnchorClick(e, '#hero')}
-					className="flex items-center gap-2.5 text-[#141414] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#141414] rounded"
+					className="flex items-center gap-2 text-[#141414] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#141414] rounded min-w-0"
 				>
 					<span
 						aria-hidden="true"
-						className="inline-flex items-center justify-center w-6 h-6"
+						className="inline-flex items-center justify-center w-6 h-6 shrink-0"
 					>
 						<svg
 							viewBox="0 0 24 24"
@@ -88,7 +97,7 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 							/>
 						</svg>
 					</span>
-					<span className="text-[17px] font-bold tracking-tight">
+					<span className="text-[16px] sm:text-[17px] font-bold tracking-tight truncate">
 						Leandro Malungo
 					</span>
 				</a>
@@ -96,7 +105,7 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 				{/* Zone 2: Single-Line Anchor Navigation Links */}
 				<nav
 					aria-label="Primary"
-					className="hidden md:flex items-center gap-7 text-[13.5px] font-medium text-[#4A4A4A]"
+					className="hidden md:flex items-center gap-5 lg:gap-8 text-[13.5px] font-medium text-[#4A4A4A]"
 				>
 					{NAV_LINKS.map((link) => {
 						const isActive = activeHref === link.href;
@@ -121,7 +130,7 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 				</nav>
 
 				{/* Zone 3: 1 Primary Action + Mobile Trigger */}
-				<div className="flex items-center gap-3 shrink-0">
+				<div className="flex items-center gap-2.5 shrink-0">
 					<button
 						type="button"
 						onClick={onBookCall}
@@ -133,9 +142,11 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 					<button
 						type="button"
 						onClick={() => setMobileOpen((prev) => !prev)}
-						aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+						aria-label={
+							mobileOpen ? 'Close navigation menu' : 'Open navigation menu'
+						}
 						aria-expanded={mobileOpen}
-						className="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full border border-black/10 bg-white text-[#141414] cursor-pointer"
+						className="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full border border-black/10 bg-white text-[#141414] cursor-pointer shrink-0"
 					>
 						{mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
 					</button>
@@ -144,15 +155,15 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 
 			{/* Mobile Anchor Navigation Drawer */}
 			{mobileOpen && (
-				<div className="md:hidden border-t border-black/[0.06] bg-[#F7F7F5] px-6 py-4 space-y-2">
+				<div className="md:hidden border-t border-black/[0.06] bg-[#F7F7F5] px-4 sm:px-6 py-4 space-y-1.5 shadow-lg">
 					{NAV_LINKS.map((link) => (
 						<a
 							key={link.href}
 							href={link.href}
 							onClick={(e) => handleAnchorClick(e, link.href)}
-							className={`block py-2.5 text-sm font-medium rounded-lg transition-colors ${
+							className={`block py-2.5 px-2 text-[14px] font-medium rounded-lg transition-colors ${
 								activeHref === link.href
-									? 'text-[#141414] font-semibold'
+									? 'text-[#141414] font-semibold bg-black/[0.04]'
 									: 'text-[#525252] hover:text-[#141414]'
 							}`}
 						>
@@ -166,7 +177,7 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 								setMobileOpen(false);
 								onBookCall();
 							}}
-							className="w-full bg-[#141414] text-white text-sm font-medium py-3 rounded-full cursor-pointer"
+							className="w-full min-h-[44px] bg-[#141414] text-white text-sm font-medium py-3 rounded-full cursor-pointer"
 						>
 							Hire talent
 						</button>

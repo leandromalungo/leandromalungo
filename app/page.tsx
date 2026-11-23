@@ -5,15 +5,10 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import CapabilitiesBar from '@/components/CapabilitiesBar';
 import AboutSection from '@/components/AboutSection';
-import BrandSocialSection from '@/components/BrandSocialSection';
-import ProductDesignSection from '@/components/ProductDesignSection';
+import ProjectsSection from '@/components/ProjectsSection';
 import ContactFooter from '@/components/ContactFooter';
 import { BookingModal, ShowcaseLightbox } from '@/components/Modals';
-import {
-	BRAND_SHOWCASE_ITEMS,
-	PRODUCT_DESIGN_ITEMS,
-	type ShowcaseItem,
-} from '@/lib/portfolio-data';
+import { GITHUB_PROFILE_URL, type ShowcaseItem } from '@/lib/portfolio-data';
 
 export default function Home() {
 	const [bookingOpen, setBookingOpen] = useState(false);
@@ -26,36 +21,28 @@ export default function Home() {
 		setBookingOpen(true);
 	};
 
-	const openBrandLightbox = (item: ShowcaseItem) => {
-		setLightboxItems(BRAND_SHOWCASE_ITEMS);
-		setActiveItem(item);
-	};
-
-	const openProductLightbox = (item: ShowcaseItem) => {
-		setLightboxItems(PRODUCT_DESIGN_ITEMS);
-		setActiveItem(item);
-	};
-
 	const openSingleHighlight = (highlight: {
 		title: string;
-		category: string;
+		categoryLabel: string;
 		description: string;
 		image: string;
 	}) => {
 		const item: ShowcaseItem = {
 			id: highlight.title,
 			title: highlight.title,
-			category: highlight.category,
+			category: 'UI/UX & Product',
+			categoryLabel: highlight.categoryLabel,
 			year: '2026',
 			description: highlight.description,
 			image: highlight.image,
+			githubUrl: GITHUB_PROFILE_URL,
 		};
 		setLightboxItems([item]);
 		setActiveItem(item);
 	};
 
 	return (
-		<div className="min-h-screen bg-[#F7F7F5] text-[#141414]">
+		<div className="min-h-screen bg-[#F7F7F5] text-[#141414] overflow-x-clip">
 			<Navbar onBookCall={() => openBooking('Mobile & Web Development')} />
 
 			<main>
@@ -68,14 +55,8 @@ export default function Home() {
 
 				<AboutSection />
 
-				<BrandSocialSection
-					onBookNow={() => openBooking('Brand & Social Design')}
-					onSelectItem={openBrandLightbox}
-				/>
-
-				<ProductDesignSection
+				<ProjectsSection
 					onBookNow={() => openBooking('UI/UX & Product Design')}
-					onSelectItem={openProductLightbox}
 				/>
 			</main>
 

@@ -9,7 +9,11 @@ import {
 	Mail,
 	MapPin,
 } from 'lucide-react';
-import { NAV_LINKS } from '@/lib/portfolio-data';
+import {
+	GITHUB_PROFILE_URL,
+	LINKEDIN_PROFILE_URL,
+	NAV_LINKS,
+} from '@/lib/portfolio-data';
 import { scrollToSection } from './Navbar';
 
 interface ContactFooterProps {
@@ -20,10 +24,10 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 	return (
 		<footer
 			id="contact"
-			className="bg-white py-16 md:py-20 scroll-mt-16"
+			className="bg-white py-14 sm:py-16 md:py-20 scroll-mt-16"
 		>
-			<div className="max-w-[1120px] mx-auto px-6">
-				<div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-black/[0.08] items-start">
+			<div className="max-w-[1160px] mx-auto px-4 sm:px-6">
+				<div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 sm:pb-12 border-b border-black/[0.08] items-start">
 					{/* Left Column: Call to Action */}
 					<div className="md:col-span-6">
 						<div className="flex items-center gap-3 mb-4">
@@ -33,7 +37,7 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 							</span>
 						</div>
 
-						<h2 className="text-[30px] sm:text-[36px] font-semibold tracking-[-0.025em] leading-[1.15] text-[#141414]">
+						<h2 className="text-[clamp(1.75rem,3.2vw,2.25rem)] font-semibold tracking-[-0.025em] leading-[1.15] text-[#141414]">
 							Have a product or brand
 							<br />
 							idea in mind?
@@ -56,16 +60,16 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 
 							<a
 								href="mailto:lmalungo@outlook.com"
-								className="inline-flex items-center gap-2 text-[13px] font-medium text-[#141414] hover:text-[#E88A1A] transition-colors"
+								className="inline-flex items-center gap-2 text-[13px] font-medium text-[#141414] hover:text-[#E88A1A] transition-colors py-2 break-all sm:break-normal"
 							>
-								<Mail className="w-4 h-4" />
+								<Mail className="w-4 h-4 shrink-0" />
 								<span>lmalungo@outlook.com</span>
 							</a>
 						</div>
 					</div>
 
 					{/* Right Column: Section Anchors & Social Channels */}
-					<div className="md:col-span-6 grid grid-cols-2 gap-8 md:justify-items-end">
+					<div className="md:col-span-6 grid grid-cols-2 gap-6 sm:gap-8 md:justify-items-end">
 						<div>
 							<h3 className="text-[12px] font-semibold uppercase tracking-wider text-neutral-400 mb-3">
 								Sections
@@ -78,7 +82,7 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 											e.preventDefault();
 											scrollToSection('#hero');
 										}}
-										className="hover:text-[#141414] transition-colors"
+										className="hover:text-[#141414] transition-colors inline-block py-0.5"
 									>
 										Home
 									</a>
@@ -91,7 +95,7 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 												e.preventDefault();
 												scrollToSection(link.href);
 											}}
-											className="hover:text-[#141414] transition-colors"
+											className="hover:text-[#141414] transition-colors inline-block py-0.5"
 										>
 											{link.label}
 										</a>
@@ -107,23 +111,23 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 							<ul className="space-y-2.5 text-[13.5px] font-medium text-[#4A4A4A]">
 								<li>
 									<a
-										href="https://github.com/leandromalungo"
+										href={GITHUB_PROFILE_URL}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors"
+										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors py-0.5"
 									>
-										<Github className="w-4 h-4" />
+										<Github className="w-4 h-4 shrink-0" />
 										<span>GitHub</span>
 									</a>
 								</li>
 								<li>
 									<a
-										href="https://www.linkedin.com/in/leandromalungo"
+										href={LINKEDIN_PROFILE_URL}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors"
+										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors py-0.5"
 									>
-										<Linkedin className="w-4 h-4" />
+										<Linkedin className="w-4 h-4 shrink-0" />
 										<span>LinkedIn</span>
 									</a>
 								</li>
@@ -132,9 +136,9 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 										href="https://www.instagram.com/leandro_malungo"
 										target="_blank"
 										rel="noopener noreferrer"
-										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors"
+										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors py-0.5"
 									>
-										<Instagram className="w-4 h-4" />
+										<Instagram className="w-4 h-4 shrink-0" />
 										<span>Instagram</span>
 									</a>
 								</li>
@@ -143,9 +147,9 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 										href="https://www.facebook.com/leandro.malungo.dev"
 										target="_blank"
 										rel="noopener noreferrer"
-										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors"
+										className="inline-flex items-center gap-2 hover:text-[#141414] transition-colors py-0.5"
 									>
-										<Facebook className="w-4 h-4" />
+										<Facebook className="w-4 h-4 shrink-0" />
 										<span>Facebook</span>
 									</a>
 								</li>
@@ -155,10 +159,10 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 				</div>
 
 				{/* Bottom Quiet Copyright Bar */}
-				<div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-neutral-500">
+				<div className="pt-7 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-neutral-500 text-center sm:text-left">
 					<p>© {new Date().getFullYear()} Leandro Malungo. All rights reserved.</p>
 					<p className="inline-flex items-center gap-1.5">
-						<MapPin className="w-3.5 h-3.5" />
+						<MapPin className="w-3.5 h-3.5 shrink-0" />
 						<span>Luanda, Angola · Available worldwide</span>
 					</p>
 				</div>

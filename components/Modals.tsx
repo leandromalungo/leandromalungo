@@ -311,7 +311,7 @@ export function ShowcaseLightbox({
 				<div className="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
 					<div>
 						<div className="flex items-center gap-2 text-xs text-neutral-500">
-							<span>{activeItem.category}</span>
+							<span>{activeItem.categoryLabel}</span>
 							{activeItem.year && (
 								<>
 									<span aria-hidden="true">·</span>

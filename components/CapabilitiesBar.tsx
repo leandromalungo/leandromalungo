@@ -8,15 +8,18 @@ export default function CapabilitiesBar() {
 			id="capabilities"
 			className="bg-white border-b border-black/[0.08] scroll-mt-16"
 		>
-			<div className="max-w-[1160px] mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-6 md:gap-10">
+			<div className="max-w-[1160px] mx-auto px-4 sm:px-6 py-5 sm:py-6 grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-4 sm:gap-7 md:gap-10">
 				{/* Item 1: Capabilities Label + 3D Purple Cube */}
 				<button
 					type="button"
 					onClick={() => scrollToSection('#capabilities')}
-					className="flex items-center gap-3 text-[#141414] whitespace-nowrap shrink-0 cursor-pointer group"
+					className="flex items-center gap-2.5 sm:gap-3 text-[#141414] whitespace-nowrap shrink-0 cursor-pointer group justify-start sm:justify-center py-1"
 				>
-					<span aria-hidden="true" className="w-8 h-8 inline-flex items-center justify-center">
-						<svg viewBox="0 0 36 36" className="w-8 h-8 drop-shadow-xs">
+					<span
+						aria-hidden="true"
+						className="w-7 h-7 sm:w-8 sm:h-8 inline-flex items-center justify-center shrink-0"
+					>
+						<svg viewBox="0 0 36 36" className="w-7 h-7 sm:w-8 sm:h-8 drop-shadow-xs">
 							<defs>
 								<linearGradient id="capCubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
 									<stop offset="0%" stopColor="#9B8CFC" />
@@ -43,7 +46,7 @@ export default function CapabilitiesBar() {
 							/>
 						</svg>
 					</span>
-					<span className="text-[13.5px] font-semibold tracking-tight group-hover:text-black">
+					<span className="text-[13px] sm:text-[13.5px] font-semibold tracking-tight group-hover:text-black">
 						Capabilities
 					</span>
 				</button>
@@ -51,17 +54,20 @@ export default function CapabilitiesBar() {
 				{/* Vertical Divider */}
 				<div
 					aria-hidden="true"
-					className="hidden sm:block h-7 w-px bg-black/15"
+					className="hidden md:block h-7 w-px bg-black/15"
 				/>
 
-				{/* Item 2: Product Design */}
+				{/* Item 2: Product Design -> scrolls to #projectos */}
 				<button
 					type="button"
-					onClick={() => scrollToSection('#product-design')}
-					className="flex items-center gap-3 text-[#262626] hover:text-[#141414] whitespace-nowrap shrink-0 cursor-pointer transition-colors group"
+					onClick={() => scrollToSection('#projectos')}
+					className="flex items-center gap-2.5 sm:gap-3 text-[#262626] hover:text-[#141414] whitespace-nowrap shrink-0 cursor-pointer transition-colors group justify-start sm:justify-center py-1"
 				>
-					<span aria-hidden="true" className="w-8 h-8 inline-flex items-center justify-center">
-						<svg viewBox="0 0 36 36" className="w-8 h-8">
+					<span
+						aria-hidden="true"
+						className="w-7 h-7 sm:w-8 sm:h-8 inline-flex items-center justify-center shrink-0"
+					>
+						<svg viewBox="0 0 36 36" className="w-7 h-7 sm:w-8 sm:h-8">
 							<defs>
 								<linearGradient id="silverPetal" x1="0%" y1="0%" x2="100%" y2="100%">
 									<stop offset="0%" stopColor="#E5E7EB" />
@@ -77,17 +83,22 @@ export default function CapabilitiesBar() {
 							</g>
 						</svg>
 					</span>
-					<span className="text-[13.5px] font-medium">Product Design</span>
+					<span className="text-[13px] sm:text-[13.5px] font-medium">
+						Product Design
+					</span>
 				</button>
 
-				{/* Item 3: Mobile & Web */}
+				{/* Item 3: Mobile & Web -> scrolls to #about */}
 				<button
 					type="button"
 					onClick={() => scrollToSection('#about')}
-					className="flex items-center gap-3 text-[#262626] hover:text-[#141414] whitespace-nowrap shrink-0 cursor-pointer transition-colors group"
+					className="flex items-center gap-2.5 sm:gap-3 text-[#262626] hover:text-[#141414] whitespace-nowrap shrink-0 cursor-pointer transition-colors group justify-start sm:justify-center py-1"
 				>
-					<span aria-hidden="true" className="w-8 h-8 inline-flex items-center justify-center">
-						<svg viewBox="0 0 36 36" className="w-8 h-8">
+					<span
+						aria-hidden="true"
+						className="w-7 h-7 sm:w-8 sm:h-8 inline-flex items-center justify-center shrink-0"
+					>
+						<svg viewBox="0 0 36 36" className="w-7 h-7 sm:w-8 sm:h-8">
 							<defs>
 								<linearGradient id="silverWingA" x1="0%" y1="0%" x2="100%" y2="100%">
 									<stop offset="0%" stopColor="#F3F4F6" />
@@ -103,17 +114,22 @@ export default function CapabilitiesBar() {
 							<polygon points="18,22 30,27 18,31 6,27" fill="#D1D5DB" />
 						</svg>
 					</span>
-					<span className="text-[13.5px] font-medium">Mobile &amp; Web</span>
+					<span className="text-[13px] sm:text-[13.5px] font-medium">
+						Mobile &amp; Web
+					</span>
 				</button>
 
-				{/* Item 4: Brand & Visual Design */}
+				{/* Item 4: Brand & Visual Design -> scrolls to #projectos */}
 				<button
 					type="button"
-					onClick={() => scrollToSection('#brand-social')}
-					className="flex items-center gap-3 text-[#262626] hover:text-[#141414] whitespace-nowrap shrink-0 cursor-pointer transition-colors group"
+					onClick={() => scrollToSection('#projectos')}
+					className="flex items-center gap-2.5 sm:gap-3 text-[#262626] hover:text-[#141414] whitespace-nowrap shrink-0 cursor-pointer transition-colors group justify-start sm:justify-center py-1"
 				>
-					<span aria-hidden="true" className="w-8 h-8 inline-flex items-center justify-center">
-						<svg viewBox="0 0 36 36" className="w-8 h-8">
+					<span
+						aria-hidden="true"
+						className="w-7 h-7 sm:w-8 sm:h-8 inline-flex items-center justify-center shrink-0"
+					>
+						<svg viewBox="0 0 36 36" className="w-7 h-7 sm:w-8 sm:h-8">
 							<defs>
 								<radialGradient id="paletteSphere" cx="35%" cy="30%" r="70%">
 									<stop offset="0%" stopColor="#60A5FA" />
@@ -128,7 +144,7 @@ export default function CapabilitiesBar() {
 							<circle cx="15" cy="23" r="1.9" fill="#F9FAFB" />
 						</svg>
 					</span>
-					<span className="text-[13.5px] font-medium">
+					<span className="text-[13px] sm:text-[13.5px] font-medium">
 						Brand &amp; Visual Design
 					</span>
 				</button>

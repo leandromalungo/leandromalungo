@@ -1,17 +1,23 @@
 export interface ShowcaseItem {
 	id: string;
 	title: string;
-	category: string;
+	category: 'Web & IA' | 'UI/UX & Product' | 'Comunidade & Media';
+	categoryLabel: string;
 	year: string;
 	description: string;
 	image: string;
+	githubUrl: string;
 }
+
+export const GITHUB_PROFILE_URL = 'https://github.com/leandromalungo';
+
+export const LINKEDIN_PROFILE_URL =
+	'https://www.linkedin.com/in/leandromalungo';
 
 export const NAV_LINKS = [
 	{ label: 'Capabilities', href: '#capabilities' },
 	{ label: 'About', href: '#about' },
-	{ label: 'Brand & Social', href: '#brand-social' },
-	{ label: 'UI/UX & Product', href: '#product-design' },
+	{ label: 'Projectos', href: '#projectos' },
 	{ label: 'Contact', href: '#contact' },
 ] as const;
 
@@ -25,143 +31,144 @@ export const PARTNER_LOGOS = [
 	{ name: 'JOGOS 80', src: '/logos/jogos80.png' },
 ] as const;
 
-export const BRAND_SHOWCASE_ITEMS: ShowcaseItem[] = [
+export const PROJECT_CATEGORIES = [
+	'Web & IA',
+	'UI/UX & Product',
+	'Comunidade & Media',
+] as const;
+
+export const PORTFOLIO_PROJECTS: ShowcaseItem[] = [
 	{
-		id: 'brand-poster',
-		title: 'Brand Identity & Print Systems',
-		category: 'Brand & Visual Design',
+		id: 'agriia-studio',
+		title: 'Agriia Studio — HAGRIA Labs',
+		category: 'Web & IA',
+		categoryLabel: 'Applied AI · TypeScript',
 		year: '2026',
 		description:
-			'Editorial identity systems, bold Swiss-inspired typography, and campaign layouts engineered for high contrast and clarity.',
-		image: '/images/brand-poster.jpg',
+			'Plataforma de agricultura de precisão, observação da Terra, análise NDVI e inteligência geoespacial desenvolvida pela HAGRIA Labs.',
+		image: '/images/ui-agritech.jpg',
+		githubUrl: 'https://github.com/leandromalungo/agriia-studio',
 	},
 	{
-		id: 'angotic-pti',
-		title: 'ANGOTIC 2026 Space Hackathon',
-		category: 'Press & Recognition',
+		id: 'nasa-space-apps-calumbo',
+		title: 'NASA Space Apps Calumbo 2026',
+		category: 'Web & IA',
+		categoryLabel: 'Space Tech · TypeScript',
 		year: '2026',
 		description:
-			'Featured in PTI Portal de T.I among the five winning startups at the ANGOTIC 2026 Space Hackathon.',
-		image: '/9.jpg',
+			'Solução web desenvolvida para o NASA International Space Apps Challenge em Calumbo, unindo dados espaciais e impacto local.',
+		image: '/5.jpg',
+		githubUrl:
+			'https://github.com/leandromalungo/Hackathon-Nasa-Space-Apps-Calumbo-2026',
 	},
 	{
-		id: 'jogos-80',
-		title: 'Jogos 80 Magazine Feature',
-		category: 'Editorial & Retrocomputing',
+		id: 'agri-ia-angotic',
+		title: 'AGRI IA — Vencedor ANGOTIC',
+		category: 'Web & IA',
+		categoryLabel: 'Startup Espacial · Kotlin & IA',
 		year: '2025',
 		description:
-			'Two-page editorial profile highlighting retrocomputing, pixel art, and software craftsmanship in Angola.',
-		image: '/12.jpg',
-	},
-	{
-		id: 'agri-ia',
-		title: 'AGRI IA — ANGOTIC Winner',
-		category: 'Applied AI & Agriculture',
-		year: '2025',
-		description:
-			'Award-winning spatial intelligence platform helping Angolan farmers monitor crops and make data-driven decisions.',
+			'Projeto premiado no Hackathon de Startups Espaciais do ANGOTIC, apoiando produtores agrícolas com inteligência artificial e dados de satélite.',
 		image: '/11.jpg',
+		githubUrl: 'https://github.com/leandromalungo/agriia-studio',
+	},
+	{
+		id: 'ferramenta-decisao',
+		title: 'Ferramenta de Apoio à Decisão',
+		category: 'Web & IA',
+		categoryLabel: 'Geoespacial · Soluções Inteligentes',
+		year: '2025',
+		description:
+			'Demonstração pública de sistema de apoio à decisão baseado em observação por satélite para mapeamento de vulnerabilidades em Angola.',
+		image: '/7.jpg',
+		githubUrl: GITHUB_PROFILE_URL,
+	},
+	{
+		id: 'sal-o-plus',
+		title: 'Sal-o-Plus Platform',
+		category: 'UI/UX & Product',
+		categoryLabel: 'Web App · TypeScript',
+		year: '2026',
+		description:
+			'Aplicação web moderna estruturada com TypeScript e arquitetura modular focada em experiência do utilizador e escalabilidade.',
+		image: '/images/ui-saas.jpg',
+		githubUrl: 'https://github.com/leandromalungo/sal-o-plus',
+	},
+	{
+		id: 'leandromalungo-3d',
+		title: 'Portfólio 3D Interativo',
+		category: 'UI/UX & Product',
+		categoryLabel: 'Next.js · Three.js & UI',
+		year: '2026',
+		description:
+			'Experiência web imersiva com galeria espacial em WebGL, shaders personalizados e design editorial de alta precisão.',
+		image: '/10.jpg',
+		githubUrl: 'https://github.com/leandromalungo/leandromalungo',
+	},
+	{
+		id: 'spendly-fintech',
+		title: 'Mobile Fintech & Wallet UI',
+		category: 'UI/UX & Product',
+		categoryLabel: 'Mobile UI/UX · Product Design',
+		year: '2026',
+		description:
+			'Conceito de interface mobile para pagamentos instantâneos e carteira digital com foco em clareza financeira.',
+		image: '/images/ui-fintech.jpg',
+		githubUrl: GITHUB_PROFILE_URL,
+	},
+	{
+		id: 'comandos-terminal',
+		title: 'Comandos de Terminal & DevOps',
+		category: 'UI/UX & Product',
+		categoryLabel: 'Developer Tools · Documentação',
+		year: '2025',
+		description:
+			'Repositório público organizado por pastas com soluções práticas de terminal, Linux e configurações de desenvolvimento.',
+		image: '/images/brand-poster.jpg',
+		githubUrl: 'https://github.com/leandromalungo/Comandos-de-terminal',
+	},
+	{
+		id: 'angotic-pti-2026',
+		title: 'ANGOTIC 2026 — Destaque PTI',
+		category: 'Comunidade & Media',
+		categoryLabel: 'Imprensa · Hackathon Espacial',
+		year: '2026',
+		description:
+			'Matéria no PTI Portal de T.I destacando as cinco startups vencedoras do hackathon espacial do ANGOTIC 2026 em Luanda.',
+		image: '/9.jpg',
+		githubUrl: GITHUB_PROFILE_URL,
+	},
+	{
+		id: 'jogos-80-magazine',
+		title: 'Revista Jogos 80 — Nostálgicos Tardios',
+		category: 'Comunidade & Media',
+		categoryLabel: 'Editorial · Retrocomputação',
+		year: '2025',
+		description:
+			'Reportagem especial na Revista Jogos 80 sobre retrocomputação, MSX, pixel art e preservação de jogos em Angola.',
+		image: '/12.jpg',
+		githubUrl: GITHUB_PROFILE_URL,
 	},
 	{
 		id: 'semana-verde',
 		title: 'Semana Verde da Juventude',
-		category: 'Hackathon · Luanda',
+		category: 'Comunidade & Media',
+		categoryLabel: 'Hackathon · EcoAngola',
 		year: '2026',
 		description:
-			'Collaborative sustainability hackathon hosted in Luanda with EcoAngola and international partners.',
+			'Participação no Hackathon da Semana Verde da Juventude em Luanda desenvolvendo soluções tecnológicas sustentáveis.',
 		image: '/4.jpg',
+		githubUrl: GITHUB_PROFILE_URL,
 	},
 	{
-		id: 'world-space-week',
-		title: 'World Space Week Angola',
-		category: 'Geospatial & Satellites',
-		year: '2026',
-		description:
-			'Earth observation and satellite platform presentation at Parque de Ciência e Tecnologia de Luanda.',
-		image: '/5.jpg',
-	},
-	{
-		id: 'ferramenta-decisao',
-		title: 'Decision Support Platform',
-		category: 'Soluções Inteligentes',
+		id: 'podnerd-community',
+		title: 'Podnerd & Comunidade Tech',
+		category: 'Comunidade & Media',
+		categoryLabel: 'Comunidade · Talks & Media',
 		year: '2025',
 		description:
-			'Live public demonstration of a satellite-backed decision support system for vulnerability mapping in Angola.',
-		image: '/7.jpg',
-	},
-	{
-		id: 'zanecom-talk',
-		title: 'Tech Ecosystem Keynote',
-		category: 'Public Speaking',
-		year: '2025',
-		description:
-			'Stage talk on building resilient developer ecosystems and launching practical digital products.',
-		image: '/10.jpg',
-	},
-	{
-		id: 'podnerd-brand',
-		title: 'Podnerd Community & Media',
-		category: 'Media & Identity',
-		year: '2025',
-		description:
-			'Podcast visual identity, apparel, and social graphics for Angola’s developer and nerd culture community.',
+			'Produção visual, palestras e conversas ao vivo sobre engenharia de software, jogos indie e carreira tech em Angola.',
 		image: '/3.jpg',
-	},
-	{
-		id: 'bruno-interview',
-		title: 'Live Developer Podcast',
-		category: 'Community & Talks',
-		year: '2025',
-		description:
-			'International live conversation sharing software engineering journeys and mobile/web product building.',
-		image: '/6.jpg',
-	},
-	{
-		id: 'dicas-workshop',
-		title: 'Developer Career Workshop',
-		category: 'Mentorship & Teaching',
-		year: '2025',
-		description:
-			'Interactive session guiding aspiring engineers on practical problem-solving and portfolio creation.',
-		image: '/8.jpg',
-	},
-	{
-		id: 'angotic-stage',
-		title: 'ANGOTIC Finalists Stage',
-		category: 'Innovation Awards',
-		year: '2026',
-		description:
-			'Closing ceremony on the main stage alongside mentors, jury members, and fellow startup founders.',
-		image: '/2.jpg',
-	},
-];
-
-export const PRODUCT_DESIGN_ITEMS: ShowcaseItem[] = [
-	{
-		id: 'ui-agritech',
-		title: 'AgriCrop — Spatial AI Dashboard',
-		category: 'UI/UX & Product Design',
-		year: '2026',
-		description:
-			'Web and mobile decision-support interface combining NDVI satellite imagery, crop stress telemetry, and instant field alerts.',
-		image: '/images/ui-agritech.jpg',
-	},
-	{
-		id: 'ui-fintech',
-		title: 'Spendly — Mobile Wallet & Payments',
-		category: 'Mobile App Design',
-		year: '2026',
-		description:
-			'Streamlined iOS & Android banking experience focused on one-tap peer transfers, clear balances, and calm visual hierarchy.',
-		image: '/images/ui-fintech.jpg',
-	},
-	{
-		id: 'ui-saas',
-		title: 'Nexus — Workforce & Talent SaaS',
-		category: 'Web & Companion App',
-		year: '2025',
-		description:
-			'Modular enterprise dashboard and mobile companion app unifying team workflows, candidate funnels, and role discovery.',
-		image: '/images/ui-saas.jpg',
+		githubUrl: GITHUB_PROFILE_URL,
 	},
 ];

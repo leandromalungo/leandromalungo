@@ -9,7 +9,7 @@ interface HeroSectionProps {
 	onBookCall: () => void;
 	onSelectHighlight: (item: {
 		title: string;
-		category: string;
+		categoryLabel: string;
 		description: string;
 		image: string;
 	}) => void;
@@ -22,8 +22,8 @@ export default function HeroSection({
 	return (
 		<section id="hero" className="bg-[#F7F7F5] scroll-mt-16">
 			{/* Main Hero Split */}
-			<div className="max-w-[1240px] mx-auto px-6 pt-10 pb-12 lg:pt-14 lg:pb-16">
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+			<div className="max-w-[1240px] mx-auto px-4 sm:px-6 pt-8 pb-10 sm:pt-12 sm:pb-14 lg:pt-14 lg:pb-16">
+				<div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
 					{/* Left Column: Oversized Typographic Hierarchy & CTA */}
 					<motion.div
 						initial={{ opacity: 0, y: 12 }}
@@ -31,7 +31,7 @@ export default function HeroSection({
 						transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
 						className="lg:col-span-5 flex flex-col justify-between"
 					>
-						<h1 className="text-[44px] sm:text-[54px] lg:text-[62px] font-medium tracking-[-0.035em] leading-[1.03] text-[#141414] text-balance max-w-md">
+						<h1 className="text-[clamp(2.35rem,5vw,3.875rem)] font-medium tracking-[-0.035em] leading-[1.03] text-[#141414] text-balance max-w-md">
 							Build your
 							<br />
 							dream product
@@ -39,18 +39,18 @@ export default function HeroSection({
 							today.
 						</h1>
 
-						<div className="mt-10 lg:mt-28">
-							<p className="text-[14px] leading-[1.55] text-[#4A4A4A] max-w-[330px]">
+						<div className="mt-8 sm:mt-10 lg:mt-20 xl:mt-24">
+							<p className="text-[14px] leading-[1.55] text-[#4A4A4A] max-w-[340px]">
 								Unlock success with thoughtful UI/UX, full-stack engineering, and
 								applied AI. Build now for unparalleled results.
 							</p>
 
 							{/* CTA Pill + Overlapping Portrait Avatars */}
-							<div className="mt-6 flex items-center gap-4 flex-wrap">
+							<div className="mt-6 flex items-center gap-3.5 sm:gap-4 flex-wrap">
 								<button
 									type="button"
 									onClick={onBookCall}
-									className="inline-flex items-center gap-4 bg-[#141414] hover:bg-neutral-800 text-white rounded-full pl-5 pr-2 py-2 transition-colors cursor-pointer whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#141414]"
+									className="inline-flex items-center gap-3.5 sm:gap-4 bg-[#141414] hover:bg-neutral-800 text-white rounded-full pl-5 pr-2 py-2 transition-colors cursor-pointer whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#141414]"
 								>
 									<span className="text-[13px] font-medium">
 										Hiring? Book a call
@@ -63,8 +63,8 @@ export default function HeroSection({
 								{/* Overlapping Avatar Cluster */}
 								<button
 									type="button"
-									onClick={() => scrollToSection('#brand-social')}
-									title="Explore featured projects and milestones"
+									onClick={() => scrollToSection('#projectos')}
+									title="Ver projectos em destaque"
 									className="flex items-center -space-x-2.5 cursor-pointer group"
 								>
 									<img
@@ -93,28 +93,27 @@ export default function HeroSection({
 						</div>
 					</motion.div>
 
-					{/* Right Column: Asymmetric 3-Column Bento Mosaic */}
+					{/* Right Column: Asymmetric 3-Column Bento Mosaic (2-col balanced on sm/md, 3-col on lg+) */}
 					<motion.div
 						initial={{ opacity: 0, y: 16 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-						className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-3.5 items-stretch"
+						className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 items-stretch"
 					>
 						{/* Bento Column 1 */}
 						<div className="flex flex-col gap-3.5">
-							{/* Top Photo Card */}
 							<button
 								type="button"
 								onClick={() =>
 									onSelectHighlight({
 										title: 'Leandro Malungo',
-										category: 'Full-Stack Developer',
+										categoryLabel: 'Full-Stack Developer',
 										description:
 											'Software developer based in Luanda, Angola. Building web, mobile, backend APIs, and applied AI products.',
 										image: '/1.jpg',
 									})
 								}
-								className="relative h-[225px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#EAEBEE] to-[#D7D9DF] text-left group cursor-pointer"
+								className="relative h-[220px] sm:h-[225px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#EAEBEE] to-[#D7D9DF] text-left group cursor-pointer"
 							>
 								<img
 									src="/1.jpg"
@@ -132,61 +131,58 @@ export default function HeroSection({
 										</span>
 									</div>
 									<p className="text-[10.5px] text-neutral-500 leading-tight mt-0.5">
-										Frontend &amp; Full-Stack
+										Full-Stack Dev.
 									</p>
 								</div>
 							</button>
 
-							{/* Bottom Soft Lavender Card */}
-							<div className="flex-1 min-h-[195px] rounded-2xl bg-[#DFD3F8] p-5 relative overflow-hidden flex flex-col justify-between">
+							<div className="flex-1 min-h-[175px] lg:min-h-[195px] rounded-2xl bg-[#DFD3F8] p-5 relative overflow-hidden flex flex-col justify-between">
 								<div
 									aria-hidden="true"
 									className="absolute -bottom-10 -right-10 w-44 h-44 rotate-12 rounded-3xl bg-white/25 pointer-events-none"
 								/>
-								<h2 className="text-[19px] font-medium tracking-tight leading-[1.2] text-[#141414] relative z-10">
+								<h2 className="text-[18px] sm:text-[19px] font-medium tracking-tight leading-[1.2] text-[#141414] relative z-10">
 									Applied AI &amp;
 									<br />
-									Product Stack
+									HAGRIA Labs
 								</h2>
-								<p className="text-[11.5px] leading-[1.45] text-[#2F2B3A] mt-6 relative z-10">
-									Web apps, mobile interfaces, backend services, and AI-driven
-									tools engineered with clean code and clear communication.
+								<p className="text-[11.5px] leading-[1.45] text-[#2F2B3A] mt-5 relative z-10">
+									Web apps, Kotlin mobile experiences, NDVI geospatial tools,
+									and TypeScript/Spring systems built for real-world impact.
 								</p>
 							</div>
 						</div>
 
 						{/* Bento Column 2 */}
 						<div className="flex flex-col gap-3.5">
-							{/* Top Soft Sage Mint Card */}
-							<div className="min-h-[195px] rounded-2xl bg-[#E2F1DE] p-5 relative overflow-hidden flex flex-col justify-between">
+							<div className="min-h-[175px] lg:min-h-[195px] rounded-2xl bg-[#E2F1DE] p-5 relative overflow-hidden flex flex-col justify-between">
 								<div
 									aria-hidden="true"
 									className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-[#CBE7C4]/80 pointer-events-none"
 								/>
-								<h2 className="text-[19px] font-medium tracking-tight leading-[1.2] text-[#141414] relative z-10">
+								<h2 className="text-[18px] sm:text-[19px] font-medium tracking-tight leading-[1.2] text-[#141414] relative z-10">
 									Quick
 									<br />
 									and adaptable
 								</h2>
-								<p className="text-[11.5px] leading-[1.45] text-[#253324] mt-6 relative z-10">
-									Go from concept to functional prototype fast. Easily adapt
-									scope, features, and visual direction as your product grows.
+								<p className="text-[11.5px] leading-[1.45] text-[#253324] mt-5 relative z-10">
+									From Next.js and React interfaces to Spring and Node APIs,
+									shipping reliable MVPs and full products fast.
 								</p>
 							</div>
 
-							{/* Bottom Photo Card */}
 							<button
 								type="button"
 								onClick={() =>
 									onSelectHighlight({
-										title: 'Product & UI/UX Architecture',
-										category: 'Design & Engineering',
+										title: 'Zanecom & Tech Ecosystem',
+										categoryLabel: 'Developer · Speaker',
 										description:
-											'Keynote speaker and product builder transforming complex ideas into intuitive digital experiences.',
+											'Software Developer at Zanecom and keynote speaker sharing insights on digital ecosystems in Angola.',
 										image: '/10.jpg',
 									})
 								}
-								className="relative flex-1 min-h-[225px] rounded-2xl overflow-hidden bg-[#EDEDEB] text-left group cursor-pointer"
+								className="relative flex-1 min-h-[220px] lg:min-h-[225px] rounded-2xl overflow-hidden bg-[#EDEDEB] text-left group cursor-pointer"
 							>
 								<img
 									src="/10.jpg"
@@ -204,27 +200,26 @@ export default function HeroSection({
 										</span>
 									</div>
 									<p className="text-[10.5px] text-neutral-500 leading-tight mt-0.5">
-										UI/UX Designer
+										Zanecom · UI/UX
 									</p>
 								</div>
 							</button>
 						</div>
 
-						{/* Bento Column 3 */}
-						<div className="flex flex-col gap-3.5">
-							{/* Top Compact Photo Card */}
+						{/* Bento Column 3 (side-by-side on sm/md tablets so no orphan column!) */}
+						<div className="sm:col-span-2 lg:col-span-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:flex lg:flex-col gap-3.5">
 							<button
 								type="button"
 								onClick={() =>
 									onSelectHighlight({
 										title: 'Community & Media',
-										category: 'Podnerd · Luanda',
+										categoryLabel: 'Podnerd · Luanda',
 										description:
 											'Sharing technology insights, developer culture, and mobile craftsmanship across Angola.',
 										image: '/3.jpg',
 									})
 								}
-								className="relative h-[175px] rounded-2xl overflow-hidden bg-[#EAEBEE] text-left group cursor-pointer"
+								className="relative h-[195px] sm:h-[210px] lg:h-[175px] rounded-2xl overflow-hidden bg-[#EAEBEE] text-left group cursor-pointer"
 							>
 								<img
 									src="/3.jpg"
@@ -247,9 +242,7 @@ export default function HeroSection({
 								</div>
 							</button>
 
-							{/* Bottom Tall Warm Peach/Orange Card */}
-							<div className="flex-1 min-h-[245px] rounded-2xl bg-[#F8B77E] p-5 relative overflow-hidden flex flex-col justify-end">
-								{/* Concentric curved orange rings in top right */}
+							<div className="flex-1 min-h-[195px] sm:min-h-[210px] lg:min-h-[245px] rounded-2xl bg-[#F8B77E] p-5 relative overflow-hidden flex flex-col justify-end">
 								<div
 									aria-hidden="true"
 									className="absolute -top-12 -right-12 w-40 h-40 rounded-full border-[14px] border-[#F29C52]/55 pointer-events-none"
@@ -258,7 +251,7 @@ export default function HeroSection({
 									aria-hidden="true"
 									className="absolute -top-2 -right-2 w-24 h-24 rounded-full border-[10px] border-[#F29C52]/40 pointer-events-none"
 								/>
-								<p className="text-[17px] font-medium leading-[1.25] tracking-tight text-[#141414] relative z-10 max-w-[175px]">
+								<p className="text-[16px] sm:text-[17px] font-medium leading-[1.25] tracking-tight text-[#141414] relative z-10 max-w-[200px] lg:max-w-[175px]">
 									Rest assured, there are no shortcuts or guesswork to worry
 									about.
 								</p>
@@ -268,21 +261,21 @@ export default function HeroSection({
 				</div>
 
 				{/* Social Proof Caption */}
-				<p className="text-center text-[11.5px] text-[#7D7D82] mt-12">
+				<p className="text-center text-[11.5px] text-[#7D7D82] mt-10 sm:mt-12 px-2">
 					Collaborating across hackathons, startups &amp; tech initiatives from
 					Luanda to global stages.
 				</p>
 			</div>
 
 			{/* Full-Width Animated Black & White PNG Logo Wheel */}
-			<div className="bg-white border-y border-black/[0.06] py-5 overflow-hidden">
-				<div className="max-w-[1240px] mx-auto px-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+			<div className="bg-white border-y border-black/[0.06] py-4 sm:py-5 overflow-hidden">
+				<div className="max-w-[1240px] mx-auto px-4 sm:px-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
 					<div className="flex w-max items-center animate-logo-marquee hover:[animation-play-state:paused]">
 						{[0, 1].map((dupIndex) => (
 							<div
 								key={dupIndex}
 								aria-hidden={dupIndex === 1}
-								className="flex items-center gap-12 sm:gap-16 pr-12 sm:pr-16 shrink-0"
+								className="flex items-center gap-8 sm:gap-12 lg:gap-16 pr-8 sm:pr-12 lg:pr-16 shrink-0"
 							>
 								{PARTNER_LOGOS.map((logo) => (
 									<div
@@ -293,7 +286,7 @@ export default function HeroSection({
 											src={logo.src}
 											alt={dupIndex === 0 ? logo.name : ''}
 											referrerPolicy="no-referrer"
-											className="h-8 sm:h-9 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition-opacity select-none"
+											className="h-7 sm:h-8 lg:h-9 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition-opacity select-none"
 										/>
 									</div>
 								))}

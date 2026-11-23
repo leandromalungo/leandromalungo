@@ -5,10 +5,13 @@ import { Globe } from 'lucide-react';
 
 export default function AboutSection() {
 	return (
-		<section id="about" className="bg-white py-20 md:py-24 scroll-mt-16">
-			<div className="max-w-[1120px] mx-auto px-6">
+		<section
+			id="about"
+			className="bg-white py-14 sm:py-20 lg:py-24 scroll-mt-16"
+		>
+			<div className="max-w-[1160px] mx-auto px-4 sm:px-6">
 				{/* Section Kicker */}
-				<div className="flex items-center gap-3 mb-8">
+				<div className="flex items-center gap-3 mb-7 sm:mb-8">
 					<span aria-hidden="true" className="w-7 h-[2px] bg-[#E88A1A]" />
 					<span className="text-[12.5px] font-medium text-[#525252]">
 						About Me
@@ -16,7 +19,7 @@ export default function AboutSection() {
 				</div>
 
 				{/* Asymmetric 2-Column Split */}
-				<div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-14 items-center">
+				<div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 items-center">
 					{/* Left Column: Graphic Orange Swoosh + B&W Studio Portrait */}
 					<motion.div
 						initial={{ opacity: 0, y: 14 }}
@@ -25,7 +28,7 @@ export default function AboutSection() {
 						transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
 						className="md:col-span-6"
 					>
-						<div className="relative aspect-[4/3.65] rounded-2xl overflow-hidden bg-[#EDEDEB]">
+						<div className="relative max-w-[520px] mx-auto md:max-w-none aspect-[4/3.65] rounded-2xl overflow-hidden bg-[#EDEDEB]">
 							{/* Vivid Orange Graphic Ribbon Backdrop */}
 							<svg
 								viewBox="0 0 600 540"
@@ -43,7 +46,7 @@ export default function AboutSection() {
 							<div className="relative z-10 w-full h-full flex items-end justify-center">
 								<img
 									src="/1.jpg"
-									alt="Leandro Malungo — Software Developer & Product Designer"
+									alt="Leandro Malungo — Full-Stack Software Developer"
 									referrerPolicy="no-referrer"
 									className="w-[74%] h-[92%] object-cover object-top grayscale contrast-125 rounded-t-[140px] shadow-xs"
 								/>
@@ -52,12 +55,12 @@ export default function AboutSection() {
 							{/* Architectural diagonal light glass frame overlay in bottom right */}
 							<div
 								aria-hidden="true"
-								className="absolute -bottom-8 -right-8 w-52 h-44 bg-white/55 backdrop-blur-[2px] border border-white/70 rotate-[-14deg] rounded-lg z-20 pointer-events-none"
+								className="absolute -bottom-8 -right-8 w-44 sm:w-52 h-36 sm:h-44 bg-white/55 backdrop-blur-[2px] border border-white/70 rotate-[-14deg] rounded-lg z-20 pointer-events-none"
 							/>
 						</div>
 					</motion.div>
 
-					{/* Right Column: Headline, Bio & 3-Column Metrics */}
+					{/* Right Column: Headline, Authentic Bio & 3-Column Metrics */}
 					<motion.div
 						initial={{ opacity: 0, y: 14 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +68,7 @@ export default function AboutSection() {
 						transition={{ duration: 0.45, delay: 0.06, ease: [0.16, 1, 0.3, 1] }}
 						className="md:col-span-6"
 					>
-						<h2 className="text-[32px] sm:text-[38px] lg:text-[42px] font-semibold tracking-[-0.025em] leading-[1.16] text-[#141414]">
+						<h2 className="text-[clamp(1.85rem,3.6vw,2.625rem)] font-semibold tracking-[-0.025em] leading-[1.16] text-[#141414]">
 							Design-minded.
 							<br />
 							Developer-built.
@@ -75,37 +78,40 @@ export default function AboutSection() {
 							</span>
 						</h2>
 
-						<p className="mt-5 text-[14px] leading-[1.65] text-[#525252] max-w-[440px]">
-							I&apos;m Leandro Malungo, a multidisciplinary designer and software
-							developer from Luanda, Angola. I combine thoughtful UI / UX with
-							functional technology and applied AI to build products that solve
-							real problems.
+						<p className="mt-5 text-[14px] sm:text-[14.5px] leading-[1.65] text-[#525252] max-w-[460px]">
+							I&apos;m Leandro Malungo, a multidisciplinary product designer and
+							full-stack software developer based in Luanda, Angola. I combine
+							thoughtful UI / UX with clean architecture and modern web,
+							mobile, and AI technologies to craft reliable digital products
+							that solve real-world problems.
 						</p>
 
 						{/* 3-Column Metrics Row */}
-						<div className="mt-8 grid grid-cols-3 gap-6 max-w-[440px] items-start">
+						<div className="mt-7 sm:mt-8 grid grid-cols-3 gap-4 sm:gap-6 max-w-[440px] items-start">
 							<div>
-								<div className="text-[24px] font-semibold text-[#141414] tabular-nums leading-none">
+								<div className="text-[20px] sm:text-[24px] font-semibold text-[#141414] tabular-nums leading-none">
 									4+
 								</div>
 								<div className="text-[11px] text-[#666666] mt-2">
-									Years of creating
+									Years coding
 								</div>
 							</div>
 
 							<div>
-								<div className="text-[24px] font-semibold text-[#141414] tabular-nums leading-none">
+								<div className="text-[20px] sm:text-[24px] font-semibold text-[#141414] tabular-nums leading-none">
 									12+
 								</div>
-								<div className="text-[11px] text-[#666666] mt-2">Projects</div>
+								<div className="text-[11px] text-[#666666] mt-2">
+									Projects &amp; Repos
+								</div>
 							</div>
 
 							<div>
 								<div className="text-[#141414] leading-none">
-									<Globe className="w-6 h-6 stroke-[1.75]" />
+									<Globe className="w-5 h-5 sm:w-6 sm:h-6 stroke-[1.75]" />
 								</div>
 								<div className="text-[11px] text-[#666666] mt-2 leading-snug">
-									Angola, Available worldwide.
+									Luanda, Angola · Worldwide
 								</div>
 							</div>
 						</div>
