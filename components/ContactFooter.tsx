@@ -31,6 +31,7 @@ export default function ContactFooter({ onBookCall }: ContactFooterProps) {
 							<li><a className="inline-flex items-center gap-2 hover:text-black" href={INSTAGRAM_PROFILE_URL} target="_blank" rel="noreferrer"><Instagram className="w-4 h-4" />Instagram</a></li>
 							<li><a className="inline-flex items-center gap-2 hover:text-black" href={FACEBOOK_PROFILE_URL} target="_blank" rel="noreferrer"><Facebook className="w-4 h-4" />Facebook</a></li>
 							<li><a className="hover:text-black" href={LINKTREE_URL} target="_blank" rel="noreferrer">Linktree</a></li>
+							<li><a className="hover:text-black" href="/cv">Perfil profissional / CV</a></li>
 						</ul></div>
 					</div>
 				</div>

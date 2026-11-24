@@ -20,7 +20,9 @@ export const NAV_LINKS = [
 	{ label: 'Sobre', href: '#about' },
 	{ label: 'Percurso', href: '#percurso' },
 	{ label: 'Reconhecimentos', href: '#reconhecimentos' },
+	{ label: 'Estudos de caso', href: '#trabalho' },
 	{ label: 'Projectos', href: '#projectos' },
+	{ label: 'Ideias', href: '#ideias' },
 	{ label: 'Contacto', href: '#contact' },
 ] as const;
 

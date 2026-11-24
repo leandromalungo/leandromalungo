@@ -54,8 +54,9 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 					<span className="w-7 h-7 rounded-full bg-[#141414] text-white flex items-center justify-center text-xs">LM</span>
 					<span>Leandro Malungo</span>
 				</a>
-				<nav aria-label="Navegação principal" className="hidden lg:flex items-center gap-6 text-[13px] font-medium text-[#555555]">
+				<nav aria-label="Navegação principal" className="hidden lg:flex items-center gap-5 text-[12px] font-medium text-[#555555]">
 					{NAV_LINKS.map((link) => <a key={link.href} href={link.href} onClick={(event) => handleAnchorClick(event, link.href)} className={activeHref === link.href ? 'text-black' : 'hover:text-black'}>{link.label}</a>)}
+					<a href="/cv" className="hover:text-black">CV</a>
 				</nav>
 				<div className="flex items-center gap-2">
 					<button type="button" onClick={onBookCall} className="hidden sm:inline-flex bg-[#141414] hover:bg-neutral-800 text-white text-xs font-medium px-5 py-2.5 rounded-full">Vamos conversar</button>
@@ -66,6 +67,7 @@ export default function Navbar({ onBookCall }: NavbarProps) {
 			</div>
 			{mobileOpen && <div className="lg:hidden border-t border-black/[0.06] bg-[#F7F7F5] px-4 py-4 space-y-2">
 				{NAV_LINKS.map((link) => <a key={link.href} href={link.href} onClick={(event) => handleAnchorClick(event, link.href)} className="block py-2 text-sm font-medium text-[#444]">{link.label}</a>)}
+				<a href="/cv" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium text-[#444]">Perfil profissional / CV</a>
 				<button type="button" onClick={() => { setMobileOpen(false); onBookCall(); }} className="w-full bg-[#141414] text-white text-sm font-medium py-3 rounded-full">Vamos conversar</button>
 			</div>}
 		</header>

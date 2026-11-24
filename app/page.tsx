@@ -7,7 +7,10 @@ import CapabilitiesBar from '@/components/CapabilitiesBar';
 import AboutSection from '@/components/AboutSection';
 import JourneySection from '@/components/JourneySection';
 import RecognitionSection from '@/components/RecognitionSection';
+import CaseStudiesSection from '@/components/CaseStudiesSection';
 import ProjectsSection from '@/components/ProjectsSection';
+import IdeasSection from '@/components/IdeasSection';
+import OpportunitiesSection from '@/components/OpportunitiesSection';
 import ContactFooter from '@/components/ContactFooter';
 import { BookingModal, ShowcaseLightbox } from '@/components/Modals';
 import { GITHUB_PROFILE_URL, type ShowcaseItem } from '@/lib/portfolio-data';
@@ -47,7 +50,10 @@ export default function Home() {
 				<AboutSection />
 				<JourneySection />
 				<RecognitionSection />
+				<CaseStudiesSection />
 				<ProjectsSection onBookNow={() => openBooking('Projecto de software ou inovação')} />
+				<IdeasSection />
+				<OpportunitiesSection />
 			</main>
 			<ContactFooter onBookCall={() => openBooking('Contacto geral')} />
 			<BookingModal open={bookingOpen} defaultService={bookingService} onClose={() => setBookingOpen(false)} />
