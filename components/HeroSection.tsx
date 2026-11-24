@@ -27,7 +27,7 @@ export default function HeroSection({ onBookCall, onSelectHighlight }: HeroSecti
 						className="lg:col-span-7"
 					>
 						<p className="text-xs sm:text-sm font-semibold tracking-[0.16em] uppercase text-[#A45B16] mb-5">
-							Desenvolvedor de Software · Empreendedor de Tecnologia
+							Desenvolvedor Front-end · Empreendedor de Tecnologia
 						</p>
 						<h1 className="text-[clamp(2.8rem,7vw,5.6rem)] font-semibold tracking-[-0.055em] leading-[0.98] text-[#141414] max-w-4xl">
 							Construo tecnologia para resolver problemas reais.
