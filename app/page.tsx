@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import CapabilitiesBar from '@/components/CapabilitiesBar';
 import AboutSection from '@/components/AboutSection';
+import JourneySection from '@/components/JourneySection';
+import RecognitionSection from '@/components/RecognitionSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactFooter from '@/components/ContactFooter';
 import { BookingModal, ShowcaseLightbox } from '@/components/Modals';
@@ -12,7 +14,7 @@ import { GITHUB_PROFILE_URL, type ShowcaseItem } from '@/lib/portfolio-data';
 
 export default function Home() {
 	const [bookingOpen, setBookingOpen] = useState(false);
-	const [bookingService, setBookingService] = useState('UI/UX & Product Design');
+	const [bookingService, setBookingService] = useState('Desenvolvimento de produto digital');
 	const [lightboxItems, setLightboxItems] = useState<ShowcaseItem[]>([]);
 	const [activeItem, setActiveItem] = useState<ShowcaseItem | null>(null);
 
@@ -21,12 +23,7 @@ export default function Home() {
 		setBookingOpen(true);
 	};
 
-	const openSingleHighlight = (highlight: {
-		title: string;
-		categoryLabel: string;
-		description: string;
-		image: string;
-	}) => {
+	const openSingleHighlight = (highlight: { title: string; categoryLabel: string; description: string; image: string }) => {
 		const item: ShowcaseItem = {
 			id: highlight.title,
 			title: highlight.title,
@@ -43,37 +40,18 @@ export default function Home() {
 
 	return (
 		<div className="min-h-screen bg-[#F7F7F5] text-[#141414] overflow-x-clip">
-			<Navbar onBookCall={() => openBooking('Mobile & Web Development')} />
-
+			<Navbar onBookCall={() => openBooking('Colaboração e desenvolvimento de produto')} />
 			<main>
-				<HeroSection
-					onBookCall={() => openBooking('Mobile & Web Development')}
-					onSelectHighlight={openSingleHighlight}
-				/>
-
+				<HeroSection onBookCall={() => openBooking('Colaboração e desenvolvimento de produto')} onSelectHighlight={openSingleHighlight} />
 				<CapabilitiesBar />
-
 				<AboutSection />
-
-				<ProjectsSection
-					onBookNow={() => openBooking('UI/UX & Product Design')}
-				/>
+				<JourneySection />
+				<RecognitionSection />
+				<ProjectsSection onBookNow={() => openBooking('Projecto de software ou inovação')} />
 			</main>
-
-			<ContactFooter onBookCall={() => openBooking('UI/UX & Product Design')} />
-
-			<BookingModal
-				open={bookingOpen}
-				defaultService={bookingService}
-				onClose={() => setBookingOpen(false)}
-			/>
-
-			<ShowcaseLightbox
-				items={lightboxItems}
-				activeItem={activeItem}
-				onSelect={setActiveItem}
-				onClose={() => setActiveItem(null)}
-			/>
+			<ContactFooter onBookCall={() => openBooking('Contacto geral')} />
+			<BookingModal open={bookingOpen} defaultService={bookingService} onClose={() => setBookingOpen(false)} />
+			<ShowcaseLightbox items={lightboxItems} activeItem={activeItem} onSelect={setActiveItem} onClose={() => setActiveItem(null)} />
 		</div>
 	);
 }
