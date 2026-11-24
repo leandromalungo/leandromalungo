@@ -7,7 +7,7 @@ const dmSans = DM_Sans({ variable: '--font-dm-sans', subsets: ['latin'], weight:
 const jetbrainsMono = JetBrains_Mono({ variable: '--font-jetbrains-mono', subsets: ['latin'], weight: ['400', '500'] });
 
 export const metadata: Metadata = {
-	title: 'Leandro Malungo | Desenvolvedor de Software & Empreendedor de Tecnologia',
+	title: 'Leandro Malungo | Desenvolvedor Front-end & Empreendedor de Tecnologia',
 	description: 'Portfólio profissional de Leandro Malungo, desenvolvedor de software angolano, estudante de Ciências da Computação e empreendedor de tecnologia. Engenharia front-end, produtos digitais, IA aplicada e impacto comunitário.',
 	keywords: ['Leandro Malungo', 'Software Developer', 'Front-end Developer', 'Angola', 'Luanda', 'HAGRIA Labs', 'ADN Developer', 'Inteligência Artificial'],
 	openGraph: {
