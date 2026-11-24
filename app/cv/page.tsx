@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, Download, ExternalLink } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
+import PrintButton from '@/components/PrintButton';
 
 export const metadata: Metadata = {
   title: 'Perfil profissional | Leandro Malungo',
@@ -23,7 +24,7 @@ export default function CVPage() {
       <div className="print:hidden sticky top-0 z-10 bg-[#F7F7F5]/95 backdrop-blur border-b border-black/10">
         <div className="max-w-[900px] mx-auto px-5 h-16 flex items-center justify-between">
           <a href="/" className="inline-flex items-center gap-2 text-sm font-medium"><ArrowLeft className="w-4 h-4" /> Voltar ao portfólio</a>
-          <button onClick={() => window.print()} className="inline-flex items-center gap-2 bg-[#171717] text-white rounded-full px-5 py-2.5 text-xs font-semibold"><Download className="w-4 h-4" /> Guardar como PDF</button>
+          <PrintButton />
         </div>
       </div>
       <article className="max-w-[900px] mx-auto px-6 sm:px-10 py-10 sm:py-16 print:px-0 print:py-0">
