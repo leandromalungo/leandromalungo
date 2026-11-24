@@ -10,25 +10,26 @@ export interface ShowcaseItem {
 }
 
 export const GITHUB_PROFILE_URL = 'https://github.com/leandromalungo';
-
-export const LINKEDIN_PROFILE_URL =
-	'https://www.linkedin.com/in/leandromalungo';
+export const LINKEDIN_PROFILE_URL = 'https://ao.linkedin.com/in/leandromalungo';
+export const INSTAGRAM_PROFILE_URL = 'https://www.instagram.com/leandro_malungo/';
+export const FACEBOOK_PROFILE_URL = 'https://www.facebook.com/leandro.malungo.dev';
+export const LINKTREE_URL = 'https://linktr.ee/leandromalungo';
+export const EMAIL_ADDRESS = 'lmalungo@outlook.com';
 
 export const NAV_LINKS = [
-	{ label: 'Capabilities', href: '#capabilities' },
-	{ label: 'About', href: '#about' },
+	{ label: 'Sobre', href: '#about' },
+	{ label: 'Percurso', href: '#percurso' },
+	{ label: 'Reconhecimentos', href: '#reconhecimentos' },
 	{ label: 'Projectos', href: '#projectos' },
-	{ label: 'Contact', href: '#contact' },
+	{ label: 'Contacto', href: '#contact' },
 ] as const;
 
 export const PARTNER_LOGOS = [
+	{ name: 'GGPEN', src: '/logos/spaceweek.png' },
+	{ name: 'HAGRIA Labs', src: '/logos/agri-ia.png' },
+	{ name: 'ADN Developer', src: '/logos/podnerd.png' },
+	{ name: 'EcoAngola', src: '/logos/ecoangola.png' },
 	{ name: 'ANGOTIC', src: '/logos/angotic.png' },
-	{ name: 'Zanecom', src: '/logos/zanecom.png' },
-	{ name: 'AGRI IA', src: '/logos/agri-ia.png' },
-	{ name: 'ecoangola', src: '/logos/ecoangola.png' },
-	{ name: 'SpaceWeek', src: '/logos/spaceweek.png' },
-	{ name: 'Podnerd', src: '/logos/podnerd.png' },
-	{ name: 'JOGOS 80', src: '/logos/jogos80.png' },
 ] as const;
 
 export const PROJECT_CATEGORIES = [
@@ -39,136 +40,91 @@ export const PROJECT_CATEGORIES = [
 
 export const PORTFOLIO_PROJECTS: ShowcaseItem[] = [
 	{
-		id: 'agriia-studio',
-		title: 'Agriia Studio — HAGRIA Labs',
+		id: 'agriia',
+		title: 'Agri IA — HAGRIA Labs',
 		category: 'Web & IA',
-		categoryLabel: 'Applied AI · TypeScript',
+		categoryLabel: 'AgriTech · IA · Observação da Terra',
 		year: '2026',
 		description:
-			'Plataforma de agricultura de precisão, observação da Terra, análise NDVI e inteligência geoespacial desenvolvida pela HAGRIA Labs.',
+			'Produto de tecnologia agrícola que combina inteligência artificial, dados geoespaciais e observação da Terra para apoiar decisões no sector agrícola.',
 		image: '/images/ui-agritech.jpg',
 		githubUrl: 'https://github.com/leandromalungo/agriia-studio',
 	},
 	{
 		id: 'nasa-space-apps-calumbo',
-		title: 'NASA Space Apps Calumbo 2026',
+		title: 'NASA Space Apps Challenge — Calumbo',
 		category: 'Web & IA',
-		categoryLabel: 'Space Tech · TypeScript',
+		categoryLabel: 'Space Tech · Desenvolvimento Web',
 		year: '2026',
 		description:
-			'Solução web desenvolvida para o NASA International Space Apps Challenge em Calumbo, unindo dados espaciais e impacto local.',
+			'Participação numa equipa multidisciplinar que desenvolveu uma solução tecnológica no âmbito do NASA International Space Apps Challenge em Calumbo.',
 		image: '/5.jpg',
-		githubUrl:
-			'https://github.com/leandromalungo/Hackathon-Nasa-Space-Apps-Calumbo-2026',
-	},
-	{
-		id: 'agri-ia-angotic',
-		title: 'AGRI IA — Vencedor ANGOTIC',
-		category: 'Web & IA',
-		categoryLabel: 'Startup Espacial · Kotlin & IA',
-		year: '2025',
-		description:
-			'Projeto premiado no Hackathon de Startups Espaciais do ANGOTIC, apoiando produtores agrícolas com inteligência artificial e dados de satélite.',
-		image: '/11.jpg',
-		githubUrl: 'https://github.com/leandromalungo/agriia-studio',
+		githubUrl: 'https://github.com/leandromalungo/Hackathon-Nasa-Space-Apps-Calumbo-2026',
 	},
 	{
 		id: 'ferramenta-decisao',
-		title: 'Ferramenta de Apoio à Decisão',
+		title: 'Soluções geoespaciais e apoio à decisão',
 		category: 'Web & IA',
-		categoryLabel: 'Geoespacial · Soluções Inteligentes',
-		year: '2025',
-		description:
-			'Demonstração pública de sistema de apoio à decisão baseado em observação por satélite para mapeamento de vulnerabilidades em Angola.',
-		image: '/7.jpg',
-		githubUrl: GITHUB_PROFILE_URL,
-	},
-	{
-		id: 'sal-o-plus',
-		title: 'Sal-o-Plus Platform',
-		category: 'UI/UX & Product',
-		categoryLabel: 'Web App · TypeScript',
+		categoryLabel: 'Dados · Sistemas geoespaciais',
 		year: '2026',
 		description:
-			'Aplicação web moderna estruturada com TypeScript e arquitetura modular focada em experiência do utilizador e escalabilidade.',
+			'Exploração de ferramentas digitais que transformam dados territoriais e ambientais em informação útil para análise e tomada de decisão.',
+		image: '/7.jpg',
+		githubUrl: 'https://github.com/leandromalungo',
+	},
+	{
+		id: 'salao-plus',
+		title: 'Salão+',
+		category: 'UI/UX & Product',
+		categoryLabel: 'Produto Digital · Agendamento',
+		year: '2026',
+		description:
+			'Plataforma de agendamento e gestão de serviços, concebida para organizar disponibilidade, marcações e operações de negócio.',
 		image: '/images/ui-saas.jpg',
 		githubUrl: 'https://github.com/leandromalungo/sal-o-plus',
 	},
 	{
-		id: 'leandromalungo-3d',
-		title: 'Portfólio 3D Interativo',
+		id: 'developer-tools',
+		title: 'Comandos de Terminal',
 		category: 'UI/UX & Product',
-		categoryLabel: 'Next.js · Three.js & UI',
-		year: '2026',
-		description:
-			'Experiência web imersiva com galeria espacial em WebGL, shaders personalizados e design editorial de alta precisão.',
-		image: '/10.jpg',
-		githubUrl: 'https://github.com/leandromalungo/leandromalungo',
-	},
-	{
-		id: 'spendly-fintech',
-		title: 'Mobile Fintech & Wallet UI',
-		category: 'UI/UX & Product',
-		categoryLabel: 'Mobile UI/UX · Product Design',
-		year: '2026',
-		description:
-			'Conceito de interface mobile para pagamentos instantâneos e carteira digital com foco em clareza financeira.',
-		image: '/images/ui-fintech.jpg',
-		githubUrl: GITHUB_PROFILE_URL,
-	},
-	{
-		id: 'comandos-terminal',
-		title: 'Comandos de Terminal & DevOps',
-		category: 'UI/UX & Product',
-		categoryLabel: 'Developer Tools · Documentação',
+		categoryLabel: 'Ferramentas · Linux · Documentação',
 		year: '2025',
 		description:
-			'Repositório público organizado por pastas com soluções práticas de terminal, Linux e configurações de desenvolvimento.',
+			'Repositório de referência com comandos e apontamentos práticos para ambientes de desenvolvimento e administração de sistemas.',
 		image: '/images/brand-poster.jpg',
 		githubUrl: 'https://github.com/leandromalungo/Comandos-de-terminal',
 	},
 	{
-		id: 'angotic-pti-2026',
-		title: 'ANGOTIC 2026 — Destaque PTI',
+		id: 'adn-developer',
+		title: 'ADN Developer',
 		category: 'Comunidade & Media',
-		categoryLabel: 'Imprensa · Hackathon Espacial',
-		year: '2026',
+		categoryLabel: 'Fundação · Comunidade tecnológica',
+		year: '2025–',
 		description:
-			'Matéria no PTI Portal de T.I destacando as cinco startups vencedoras do hackathon espacial do ANGOTIC 2026 em Luanda.',
-		image: '/9.jpg',
-		githubUrl: GITHUB_PROFILE_URL,
-	},
-	{
-		id: 'jogos-80-magazine',
-		title: 'Revista Jogos 80 — Nostálgicos Tardios',
-		category: 'Comunidade & Media',
-		categoryLabel: 'Editorial · Retrocomputação',
-		year: '2025',
-		description:
-			'Reportagem especial na Revista Jogos 80 sobre retrocomputação, MSX, pixel art e preservação de jogos em Angola.',
-		image: '/12.jpg',
-		githubUrl: GITHUB_PROFILE_URL,
-	},
-	{
-		id: 'semana-verde',
-		title: 'Semana Verde da Juventude',
-		category: 'Comunidade & Media',
-		categoryLabel: 'Hackathon · EcoAngola',
-		year: '2026',
-		description:
-			'Participação no Hackathon da Semana Verde da Juventude em Luanda desenvolvendo soluções tecnológicas sustentáveis.',
-		image: '/4.jpg',
-		githubUrl: GITHUB_PROFILE_URL,
-	},
-	{
-		id: 'podnerd-community',
-		title: 'Podnerd & Comunidade Tech',
-		category: 'Comunidade & Media',
-		categoryLabel: 'Comunidade · Talks & Media',
-		year: '2025',
-		description:
-			'Produção visual, palestras e conversas ao vivo sobre engenharia de software, jogos indie e carreira tech em Angola.',
+			'Iniciativa fundada para aproximar estudantes, profissionais e entusiastas de tecnologia de oportunidades, conhecimento e colaboração no espaço lusófono.',
 		image: '/3.jpg',
-		githubUrl: GITHUB_PROFILE_URL,
+		githubUrl: 'https://adndeveloper.com',
+	},
+	{
+		id: 'podnerd',
+		title: 'PodNerd',
+		category: 'Comunidade & Media',
+		categoryLabel: 'Podcast · Comunicação tecnológica',
+		year: '2025–',
+		description:
+			'Podcast dedicado a conversas com profissionais, criadores e empreendedores sobre desenvolvimento de software, inteligência artificial e carreiras tecnológicas.',
+		image: '/10.jpg',
+		githubUrl: 'https://www.linkedin.com/in/leandromalungo',
+	},
+	{
+		id: 'editorial',
+		title: 'Artigos e participação editorial',
+		category: 'Comunidade & Media',
+		categoryLabel: 'Investigação · Escrita · Tecnologia',
+		year: '2026',
+		description:
+			'Contributos editoriais sobre tecnologia, inovação, jogos e desenvolvimento do ecossistema tecnológico em Angola.',
+		image: '/12.jpg',
+		githubUrl: 'https://quebrandocontrole.com.br/site/author/leandro-malungo/',
 	},
 ];
