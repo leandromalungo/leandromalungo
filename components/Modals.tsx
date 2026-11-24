@@ -38,6 +38,9 @@ export function BookingModal({
 
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
+		const subject = encodeURIComponent(`Contacto através do portfólio — ${service}`);
+		const body = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\nÁrea: ${service}\n\nMensagem:\n${message}`);
+		window.location.href = `mailto:lmalungo@outlook.com?subject=${subject}&body=${body}`;
 		setSubmitted(true);
 	};
 
@@ -66,14 +69,14 @@ export function BookingModal({
 						<div className="flex items-center gap-2.5 mb-2">
 							<span aria-hidden="true" className="w-5 h-[2px] bg-[#E88A1A]" />
 							<span className="text-[11.5px] font-medium text-neutral-500">
-								Book a Call
+								Contacto
 							</span>
 						</div>
 						<h3
 							id="booking-modal-title"
 							className="text-xl font-semibold tracking-tight text-[#141414]"
 						>
-							Start a project with Leandro
+							Vamos conversar sobre uma ideia
 						</h3>
 					</div>
 
@@ -93,10 +96,10 @@ export function BookingModal({
 							<Check className="w-5 h-5" />
 						</div>
 						<h4 className="mt-4 text-lg font-semibold text-[#141414]">
-							Request received
+							Mensagem preparada
 						</h4>
 						<p className="mt-2 text-sm text-neutral-600">
-							Thanks, {name || 'there'}. You can also reach Leandro directly at{' '}
+							Obrigado, {name || 'por entrar em contacto'}. O teu programa de correio electrónico deverá abrir com a mensagem preparada. Se preferires, escreve directamente para{' '}
 							<a
 								href="mailto:lmalungo@outlook.com"
 								className="font-medium text-[#141414] underline underline-offset-2"
@@ -110,7 +113,7 @@ export function BookingModal({
 							onClick={resetAndClose}
 							className="mt-6 bg-[#141414] text-white text-xs font-medium px-6 py-2.5 rounded-full cursor-pointer"
 						>
-							Done
+							Fechar
 						</button>
 					</div>
 				) : (
@@ -120,7 +123,7 @@ export function BookingModal({
 								htmlFor="booking-name"
 								className="block text-xs font-medium text-neutral-700 mb-1.5"
 							>
-								Your name
+								Nome
 							</label>
 							<input
 								id="booking-name"
@@ -128,7 +131,7 @@ export function BookingModal({
 								required
 								value={name}
 								onChange={(e) => setName(e.target.value)}
-								placeholder="Your full name"
+								placeholder="O teu nome completo"
 								className="w-full rounded-xl border border-black/15 px-3.5 py-2.5 text-sm text-[#141414] focus:outline-2 focus:outline-[#141414]"
 							/>
 						</div>
@@ -138,7 +141,7 @@ export function BookingModal({
 								htmlFor="booking-email"
 								className="block text-xs font-medium text-neutral-700 mb-1.5"
 							>
-								Email address
+								Endereço de email
 							</label>
 							<input
 								id="booking-email"
@@ -146,7 +149,7 @@ export function BookingModal({
 								required
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
-								placeholder="you@company.com"
+								placeholder="teu@email.com"
 								className="w-full rounded-xl border border-black/15 px-3.5 py-2.5 text-sm text-[#141414] focus:outline-2 focus:outline-[#141414]"
 							/>
 						</div>
@@ -156,7 +159,7 @@ export function BookingModal({
 								htmlFor="booking-service"
 								className="block text-xs font-medium text-neutral-700 mb-1.5"
 							>
-								Focus area
+								Área de interesse
 							</label>
 							<select
 								id="booking-service"
@@ -184,7 +187,7 @@ export function BookingModal({
 								htmlFor="booking-notes"
 								className="block text-xs font-medium text-neutral-700 mb-1.5"
 							>
-								Project summary
+								Mensagem
 							</label>
 							<textarea
 								id="booking-notes"
@@ -192,7 +195,7 @@ export function BookingModal({
 								required
 								value={message}
 								onChange={(e) => setMessage(e.target.value)}
-								placeholder="Tell Leandro about your product, timeline, and goals..."
+								placeholder="Conta-me brevemente sobre a tua ideia, necessidade ou oportunidade..."
 								className="w-full rounded-xl border border-black/15 px-3.5 py-2.5 text-sm text-[#141414] focus:outline-2 focus:outline-[#141414]"
 							/>
 						</div>
@@ -203,13 +206,13 @@ export function BookingModal({
 								onClick={resetAndClose}
 								className="px-4 py-2.5 text-xs font-medium text-neutral-600 hover:text-[#141414] cursor-pointer"
 							>
-								Cancel
+								Cancelar
 							</button>
 							<button
 								type="submit"
 								className="bg-[#141414] hover:bg-neutral-800 text-white text-xs font-medium px-6 py-2.5 rounded-full cursor-pointer transition-colors"
 							>
-								Send inquiry
+								Preparar mensagem
 							</button>
 						</div>
 					</form>
@@ -286,7 +289,7 @@ export function ShowcaseLightbox({
 						<>
 							<button
 								type="button"
-								aria-label="Previous item"
+								aria-label="Item anterior"
 								onClick={() =>
 									onSelect(items[(currentIndex - 1 + items.length) % items.length])
 								}
@@ -296,7 +299,7 @@ export function ShowcaseLightbox({
 							</button>
 							<button
 								type="button"
-								aria-label="Next item"
+								aria-label="Item seguinte"
 								onClick={() =>
 									onSelect(items[(currentIndex + 1) % items.length])
 								}
