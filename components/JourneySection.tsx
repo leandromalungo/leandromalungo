@@ -45,14 +45,11 @@ export default function JourneySection() {
 						<h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold tracking-[-0.04em] leading-[1.08]">Tecnologia também se constrói com pessoas.</h2>
 						<p className="mt-5 text-sm sm:text-base leading-relaxed text-[#555]">O meu percurso cruza desenvolvimento de produtos, iniciativa empreendedora, comunicação de conhecimento e participação em comunidades.</p>
 						<div className="mt-9 border-t border-black/10 pt-6">
-							<p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">Formação académica</p>
-							<h3 className="mt-3 text-lg font-semibold">Licenciatura em Ciências da Computação</h3>
-							<p className="mt-1 text-sm text-neutral-600">Em curso · início em 2026</p>
-							<p className="mt-4 text-sm font-semibold">Ensino Médio — Informática</p>
-							<p className="mt-1 text-sm text-neutral-600">Concluído em 2026</p>
+							<p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">Formação e aprendizagem contínua</p>
+							<p className="mt-3 text-sm leading-relaxed text-[#555]">Tenho aprofundado conhecimentos em ciência da computação, inteligência artificial e desenvolvimento de software através de cursos e estudo prático.</p>
 						</div>
 						<div className="mt-7 border-t border-black/10 pt-6">
-							<p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">Formação complementar</p>
+							<p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">Cursos e formações</p>
 							<ul className="mt-3 space-y-2 text-sm text-[#555]">
 								<li>CS50x — Introduction to Computer Science, HarvardX</li>
 								<li>CS50 AI — Artificial Intelligence with Python, HarvardX</li>
