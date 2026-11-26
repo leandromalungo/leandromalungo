@@ -81,31 +81,31 @@ I enjoy taking an idea from its first requirements through implementation, itera
 
 ## Technologies &amp; Tools
 
-<p align="center"><sub>A broad toolkit across modern software development, from interfaces and APIs to data, cloud and delivery.</sub></p>
+<p><sub>A broad toolkit across modern software development, from interfaces and APIs to data, cloud and delivery.</sub></p>
 
 **Frontend &amp; Mobile**
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,vue,svelte,tailwind,flutter,reactnative&theme=dark&perline=6" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, Angular, Vue, Svelte, Tailwind CSS, Flutter and React Native" />
-</div>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,vue,svelte,tailwind,flutter,reactnative&theme=dark&perline=12" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, Angular, Vue, Svelte, Tailwind CSS, Flutter and React Native" />
+</p>
 
 **Backend &amp; APIs**
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,python,fastapi,django,flask,php,laravel,go,java,cs&theme=dark&perline=6" alt="Node.js, Express, NestJS, Python, FastAPI, Django, Flask, PHP, Laravel, Go, Java and C sharp" />
-</div>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,python,fastapi,django,flask,php,laravel,go,java,cs&theme=dark&perline=12" alt="Node.js, Express, NestJS, Python, FastAPI, Django, Flask, PHP, Laravel, Go, Java and C sharp" />
+</p>
 
 **Databases, Cloud &amp; DevOps**
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase,supabase,docker,kubernetes,aws,azure,gcp,linux&theme=dark&perline=6" alt="PostgreSQL, MySQL, MongoDB, Redis, Firebase, Supabase, Docker, Kubernetes, AWS, Azure, Google Cloud and Linux" />
-</div>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase,supabase,docker,kubernetes,aws,azure,gcp,linux&theme=dark&perline=12" alt="PostgreSQL, MySQL, MongoDB, Redis, Firebase, Supabase, Docker, Kubernetes, AWS, Azure, Google Cloud and Linux" />
+</p>
 
 **Tools &amp; Workflow**
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,terraform,postman,figma,vscode&theme=dark&perline=6" alt="Git, GitHub, GitHub Actions, GitLab, Terraform, Postman, Figma and Visual Studio Code" />
-</div>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,terraform,postman,figma,vscode&theme=dark&perline=8" alt="Git, GitHub, GitHub Actions, GitLab, Terraform, Postman, Figma and Visual Studio Code" />
+</p>
 
 ## A little more
 
