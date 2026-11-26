@@ -46,11 +46,6 @@ I enjoy taking an idea from its first requirements through implementation, itera
   <img src="./assets/leandro-minecraft-developer-first-version.gif" width="320" alt="Leandro Malungo — Minecraft-style animated developer avatar" />
 </div>
 
-## Developer Terminal
-
-<div align="center">
-  <img src="./assets/developer-terminal.svg" width="100%" alt="Leandro Malungo — Developer Workspace" />
-</div>
 
 ## Mission Log
 
