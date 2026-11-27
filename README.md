@@ -77,7 +77,7 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
 **Frontend &amp; Mobile**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,vue,svelte,tailwind,flutter,reactnative&theme=dark&perline=12" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, Angular, Vue, Svelte, Tailwind CSS, Flutter and React Native" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,vue,tailwind,reactnative&theme=dark&perline=10" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, Angular, Vue, Tailwind CSS and React Native" />
 </p>
 
 **Backend &amp; APIs**
