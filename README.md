@@ -42,8 +42,6 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
   <img src="./assets/grand-line-banner.svg" width="100%" alt="Leandro Malungo — Software Developer" />
 </div>
 
-## Mission Log
-
 <p><sub>THE JOURNEY IS IN PROGRESS — these are the areas I'm actively building towards.</sub></p>
 
 <table>
