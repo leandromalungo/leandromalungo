@@ -83,7 +83,7 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
 **Backend &amp; APIs**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,python,fastapi,django,flask,php,laravel,go,java,cs&theme=dark&perline=12" alt="Node.js, Express, NestJS, Python, FastAPI, Django, Flask, PHP, Laravel, Go, Java and C sharp" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,python,fastapi,django,flask&theme=dark&perline=7" alt="Node.js, Express, NestJS, Python, FastAPI, Django and Flask" />
 </p>
 
 **Databases, Cloud &amp; DevOps**
