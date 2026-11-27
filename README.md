@@ -38,8 +38,6 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
   </tr>
 </table>
 
-## Pixel Avatar
-
 <div align="center">
   <img src="./assets/leandro-minecraft-developer-first-version.gif" width="320" alt="Leandro Malungo — Minecraft-style animated developer avatar" />
 </div>
