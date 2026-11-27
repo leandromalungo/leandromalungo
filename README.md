@@ -38,8 +38,6 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
   </tr>
 </table>
 
-## A little more
-
 <div align="center">
   <img src="./assets/grand-line-banner.svg" width="100%" alt="Leandro Malungo — Software Developer" />
 </div>
