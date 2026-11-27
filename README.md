@@ -38,10 +38,11 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
   </tr>
 </table>
 
-<div align="center">
-  <img src="./assets/leandro-minecraft-developer-first-version.gif" width="320" alt="Leandro Malungo — Minecraft-style animated developer avatar" />
-</div>
+## A little more
 
+<div align="center">
+  <img src="./assets/grand-line-banner.svg" width="100%" alt="Leandro Malungo — Software Developer" />
+</div>
 
 ## Mission Log
 
@@ -99,10 +100,8 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
   <img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,terraform,postman,figma,vscode&theme=dark&perline=8" alt="Git, GitHub, GitHub Actions, GitLab, Terraform, Postman, Figma and Visual Studio Code" />
 </p>
 
-## A little more
-
 <div align="center">
-  <img src="./assets/grand-line-banner.svg" width="100%" alt="Leandro Malungo — Software Developer" />
+  <img src="./assets/leandro-minecraft-developer-first-version.gif" width="320" alt="Leandro Malungo — Minecraft-style animated developer avatar" />
 </div>
 
 ## Connect
