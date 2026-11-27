@@ -72,7 +72,7 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
   </tr>
 </table>
 
-## Technologies &amp; Tools
+## Technologies and tools I've worked with
 
 <p><sub>A broad toolkit across modern software development, from interfaces and APIs to data, cloud and delivery.</sub></p>
 
