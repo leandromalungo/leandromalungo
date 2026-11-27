@@ -89,7 +89,7 @@ I'm **Leandro Malungo**, a software developer based in Angola, Luanda. My work c
 **Databases, Cloud &amp; DevOps**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase,supabase,docker,kubernetes,aws,azure,gcp,linux,grafana&theme=dark&perline=13" alt="PostgreSQL, MySQL, MongoDB, Redis, Firebase, Supabase, Docker, Kubernetes, AWS, Azure, Google Cloud, Linux and Grafana" />
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,firebase,supabase,docker,kubernetes,aws,azure,gcp,linux,grafana&theme=dark&perline=12" alt="PostgreSQL, MySQL, Redis, Firebase, Supabase, Docker, Kubernetes, AWS, Azure, Google Cloud, Linux and Grafana" />
   <img src="https://img.shields.io/badge/Zabbix-DC382D?style=for-the-badge&logo=zabbix&logoColor=white" alt="Zabbix" />
 </p>
 
